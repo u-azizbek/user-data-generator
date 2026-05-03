@@ -190,6 +190,21 @@ def gen_sessions(n=220):
         raw_unint   = duration * (attention / 10.0) * random.gauss(1.0, 0.10)
         uninterrupted = max(1, min(duration, int(raw_unint)))
 
+        # primary_subject: weighted toward user's preferred subject
+        other_subjects = [s for s in subjects if s != p["preferred_subject"]]
+        primary_subject = random.choices(
+            [p["preferred_subject"]] + other_subjects,
+            weights=[0.55, 0.225, 0.225]
+        )[0]
+
+        # task_switching_count: low attention → more bouncing between modules
+        switch_base = (10 - attention) * 1.5 + random.gauss(0, 2.0)
+        task_switching_count = max(0, round(switch_base))
+
+        # rage_click_count: high fatigue + low attention → frustration clicks
+        rage_base = fatigue * 0.6 + (10 - attention) * 0.5 + random.gauss(0, 1.5)
+        rage_click_count = max(0, round(rage_base))
+
         rows.append([
             f"S{i+1:04d}",
             uid,
@@ -200,6 +215,9 @@ def gen_sessions(n=220):
             time_of_day_label(hour),
             fatigue,
             attention,
+            primary_subject,
+            task_switching_count,
+            rage_click_count,
         ])
     return rows
 
@@ -226,6 +244,46 @@ def gen_video_progress(n=220):
             watched = random.randint(0, int(video_len * max_frac))
 
         is_completed = watched >= video_len * 0.9
+
+        # playback_speed_avg: high-skill / preferred-subject users skim faster;
+        # low-engagement users who struggle tend to stay at 1.0x
+        speed_weights = [0.45, 0.35, 0.20]  # 1.0x, 1.5x, 2.0x baseline
+        if p["skill"] >= 0.70 or subject == p["preferred_subject"]:
+            speed_weights = [0.20, 0.40, 0.40]  # skew faster
+        elif p["skill"] <= 0.40:
+            speed_weights = [0.65, 0.28, 0.07]  # skew slower
+        playback_speed_avg = random.choices([1.0, 1.5, 2.0], weights=speed_weights)[0]
+
+        # video_duration_seconds: this IS video_len (expose it so AI can calc %)
+        video_duration_seconds = video_len
+
+        # watched_minutes proxy for per-minute event rates
+        watched_minutes = max(1, watched / 60)
+
+        # rewind_count: high skill → fewer rewinds; dense material (slow speed) → more
+        rewind_base = (1.1 - p["skill"]) * 3.0 + (2.0 - playback_speed_avg) * 2.0
+        rewind_count = max(0, round(rewind_base * watched_minutes / 10 + random.gauss(0, 1.5)))
+
+        # pause_count: engagement drives note-taking pauses; low attention adds fatigue pauses
+        pause_base = p["engagement"] * 2.5 + random.gauss(0, 1.2)
+        pause_count = max(0, round(pause_base * watched_minutes / 10))
+
+        # skip_forward_count: boredom / too-easy → more skips; preferred subject + low skill → fewer
+        skip_base = (1.0 - p["engagement"]) * 3.0
+        if subject == p["preferred_subject"] and p["skill"] < 0.55:
+            skip_base *= 0.4   # struggling in favourite subject → watches carefully
+        skip_forward_count = max(0, round(skip_base * watched_minutes / 10 + random.gauss(0, 1.0)))
+
+        # tab_out_count: low engagement + long video → more tab-outs
+        tab_base = (1.0 - p["engagement"]) * 2.5 + (video_len / 3600) * 2.0
+        tab_out_count = max(0, round(tab_base + random.gauss(0, 1.0)))
+
+        # suggested_problems_solved: engaged users who finish act on recommended problems
+        if is_completed and random.random() < 0.55 + p["engagement"] * 0.35:
+            suggested_problems_solved = random.randint(1, max(1, round(p["skill"] * 5)))
+        else:
+            suggested_problems_solved = 0
+
         rating = None
         if is_completed and random.random() < 0.7:
             # More engaged users skew ratings higher
@@ -248,6 +306,13 @@ def gen_video_progress(n=220):
             is_completed,
             rating if rating is not None else "",
             rand_dt().strftime("%Y-%m-%d %H:%M:%S"),
+            playback_speed_avg,
+            rewind_count,
+            pause_count,
+            skip_forward_count,
+            tab_out_count,
+            video_duration_seconds,
+            suggested_problems_solved,
         ])
     return rows
 
@@ -366,12 +431,15 @@ base.mkdir(exist_ok=True)
 write_csv(base / "user_sessions.csv",
     ["session_id","user_id","login_timestamp","logout_timestamp",
      "session_duration_minutes","uninterrupted_minutes","time_of_day",
-     "fatigue_score","attention_span_score"],
+     "fatigue_score","attention_span_score",
+     "primary_subject","task_switching_count","rage_click_count"],
     gen_sessions())
 
 write_csv(base / "video_progress.csv",
     ["progress_id","user_id","lesson_id","subject_category","course_slug","lesson_slug",
-     "seconds_watched","is_completed","user_rating","timestamp"],
+     "seconds_watched","is_completed","user_rating","timestamp",
+     "playback_speed_avg","rewind_count","pause_count","skip_forward_count",
+     "tab_out_count","video_duration_seconds","suggested_problems_solved"],
     gen_video_progress())
 
 write_csv(base / "problem_attempts.csv",
