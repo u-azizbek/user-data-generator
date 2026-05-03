@@ -205,6 +205,32 @@ def gen_sessions(n=220):
         rage_base = fatigue * 0.6 + (10 - attention) * 0.5 + random.gauss(0, 1.5)
         rage_click_count = max(0, round(rage_base))
 
+        # idle_time_minutes: high fatigue + low attention → more dead time
+        idle_base = (fatigue / 10) * duration * 0.25 + (10 - attention) / 10 * duration * 0.10 + random.gauss(0, 2)
+        idle_time_minutes = max(0, min(duration - uninterrupted, round(idle_base)))
+
+        # tab_out_count: low attention + high fatigue → leaving the platform tab
+        tab_out_base = (10 - attention) * 0.9 + fatigue * 0.4 + random.gauss(0, 1.5)
+        tab_out_count = max(0, round(tab_out_base))
+
+        # lessons_completed: session length + engagement + attention (~20 min/lesson)
+        lessons_base = (duration / 20) * (0.35 + p["engagement"] * 0.65) * (attention / 10)
+        lessons_completed = max(0, round(random.gauss(lessons_base, 0.8)))
+
+        # problems_attempted: engagement + attention drive attempts (~10 min/problem)
+        problems_base = (duration / 10) * (0.25 + p["engagement"] * 0.5) * (attention / 10)
+        problems_attempted = max(0, round(random.gauss(problems_base, 1.5)))
+
+        # quizzes_taken: rare, ~1 per 50 min for engaged users
+        quiz_base = (duration / 50) * (0.2 + p["engagement"] * 0.8)
+        quizzes_taken = max(0, round(random.gauss(quiz_base, 0.4)))
+
+        # device_type: mobile skews toward night hours
+        if hour >= 22 or hour < 6:
+            device_type = random.choices(["Desktop", "Mobile", "Tablet"], weights=[0.35, 0.50, 0.15])[0]
+        else:
+            device_type = random.choices(["Desktop", "Mobile", "Tablet"], weights=[0.55, 0.30, 0.15])[0]
+
         rows.append([
             f"S{i+1:04d}",
             uid,
@@ -218,102 +244,161 @@ def gen_sessions(n=220):
             primary_subject,
             task_switching_count,
             rage_click_count,
+            idle_time_minutes,
+            tab_out_count,
+            lessons_completed,
+            problems_attempted,
+            quizzes_taken,
+            device_type,
+            None,  # streak_day — filled in post-processing
+            None,  # days_since_last_session — filled in post-processing
         ])
+
+    # Sort by user then login time to compute per-user streak and gap
+    rows.sort(key=lambda r: (r[1], r[2]))
+    last_date = {}   # uid -> date of last session
+    streak    = {}   # uid -> current streak_day
+    for row in rows:
+        uid        = row[1]
+        login_date = datetime.strptime(row[2], "%Y-%m-%d %H:%M:%S").date()
+        if uid not in last_date:
+            days_since = ""   # first recorded session — no prior data
+            streak_day = 1
+        else:
+            diff = (login_date - last_date[uid]).days
+            days_since = diff
+            if diff == 0:
+                streak_day = streak[uid]          # multiple sessions same day
+            elif diff == 1:
+                streak_day = streak[uid] + 1      # consecutive day — streak continues
+            else:
+                streak_day = 1                    # gap — streak resets
+        last_date[uid] = login_date
+        streak[uid]    = streak_day
+        row[-2] = streak_day
+        row[-1]  = days_since
+
+    # Re-number session IDs in chronological order
+    for i, row in enumerate(rows):
+        row[0] = f"S{i+1:04d}"
+
     return rows
 
-def gen_video_progress(n=220):
+def gen_video_progress():
     rows = []
-    for i in range(n):
-        uid = random.choice(user_ids)
-        p   = user_profiles[uid]
-        subject = random.choice(subjects)
-        course_slug, lesson_slugs = random.choice(courses[subject])
-        lesson_slug = random.choice(lesson_slugs)
-        video_len = random.randint(300, 3600)
+    record_num = 1
 
-        # Engagement + subject affinity drive how far the user watches
-        completion_prob = 0.30 + p["engagement"] * 0.58
-        if subject == p["preferred_subject"]:
-            completion_prob = min(0.97, completion_prob + 0.10)
-
-        if random.random() < completion_prob:
-            watched = random.randint(int(video_len * 0.85), video_len)
+    # Build list of (month_start, month_end) pairs within BASE_DATE..END_DATE
+    months = []
+    m_start = BASE_DATE.replace(day=1)
+    while m_start <= END_DATE:
+        if m_start.month == 12:
+            m_end = m_start.replace(year=m_start.year + 1, month=1, day=1) - timedelta(seconds=1)
         else:
-            # Low-engagement users drop off proportionally earlier
-            max_frac = 0.20 + p["engagement"] * 0.55
-            watched = random.randint(0, int(video_len * max_frac))
-
-        is_completed = watched >= video_len * 0.9
-
-        # playback_speed_avg: high-skill / preferred-subject users skim faster;
-        # low-engagement users who struggle tend to stay at 1.0x
-        speed_weights = [0.45, 0.35, 0.20]  # 1.0x, 1.5x, 2.0x baseline
-        if p["skill"] >= 0.70 or subject == p["preferred_subject"]:
-            speed_weights = [0.20, 0.40, 0.40]  # skew faster
-        elif p["skill"] <= 0.40:
-            speed_weights = [0.65, 0.28, 0.07]  # skew slower
-        playback_speed_avg = random.choices([1.0, 1.5, 2.0], weights=speed_weights)[0]
-
-        # video_duration_seconds: this IS video_len (expose it so AI can calc %)
-        video_duration_seconds = video_len
-
-        # watched_minutes proxy for per-minute event rates
-        watched_minutes = max(1, watched / 60)
-
-        # rewind_count: high skill → fewer rewinds; dense material (slow speed) → more
-        rewind_base = (1.1 - p["skill"]) * 3.0 + (2.0 - playback_speed_avg) * 2.0
-        rewind_count = max(0, round(rewind_base * watched_minutes / 10 + random.gauss(0, 1.5)))
-
-        # pause_count: engagement drives note-taking pauses; low attention adds fatigue pauses
-        pause_base = p["engagement"] * 2.5 + random.gauss(0, 1.2)
-        pause_count = max(0, round(pause_base * watched_minutes / 10))
-
-        # skip_forward_count: boredom / too-easy → more skips; preferred subject + low skill → fewer
-        skip_base = (1.0 - p["engagement"]) * 3.0
-        if subject == p["preferred_subject"] and p["skill"] < 0.55:
-            skip_base *= 0.4   # struggling in favourite subject → watches carefully
-        skip_forward_count = max(0, round(skip_base * watched_minutes / 10 + random.gauss(0, 1.0)))
-
-        # tab_out_count: low engagement + long video → more tab-outs
-        tab_base = (1.0 - p["engagement"]) * 2.5 + (video_len / 3600) * 2.0
-        tab_out_count = max(0, round(tab_base + random.gauss(0, 1.0)))
-
-        # suggested_problems_solved: engaged users who finish act on recommended problems
-        if is_completed and random.random() < 0.55 + p["engagement"] * 0.35:
-            suggested_problems_solved = random.randint(1, max(1, round(p["skill"] * 5)))
+            m_end = m_start.replace(month=m_start.month + 1, day=1) - timedelta(seconds=1)
+        m_end = min(m_end, END_DATE)
+        months.append((m_start, m_end))
+        if m_start.month == 12:
+            m_start = m_start.replace(year=m_start.year + 1, month=1, day=1)
         else:
-            suggested_problems_solved = 0
+            m_start = m_start.replace(month=m_start.month + 1, day=1)
 
-        rating = None
-        if is_completed and random.random() < 0.7:
-            # More engaged users skew ratings higher
-            if p["engagement"] >= 0.72:
-                weights = [1, 2, 10, 37, 50]
-            elif p["engagement"] <= 0.40:
-                weights = [5, 13, 28, 37, 17]
-            else:
-                weights = [2, 5, 15, 40, 38]
-            rating = random.choices([1, 2, 3, 4, 5], weights=weights)[0]
+    # Every user gets at least 3 video-progress records per calendar month
+    for uid in user_ids:
+        p = user_profiles[uid]
+        for month_start, month_end in months:
+            count = random.randint(3, 6)
+            for _ in range(count):
+                subject = random.choice(subjects)
+                course_slug, lesson_slugs = random.choice(courses[subject])
+                lesson_slug = random.choice(lesson_slugs)
+                video_len = random.randint(300, 3600)
 
-        rows.append([
-            f"VP{i+1:04d}",
-            uid,
-            random.choice(lesson_ids),
-            subject,
-            course_slug,
-            lesson_slug,
-            watched,
-            is_completed,
-            rating if rating is not None else "",
-            rand_dt().strftime("%Y-%m-%d %H:%M:%S"),
-            playback_speed_avg,
-            rewind_count,
-            pause_count,
-            skip_forward_count,
-            tab_out_count,
-            video_duration_seconds,
-            suggested_problems_solved,
-        ])
+                # Engagement + subject affinity drive how far the user watches
+                completion_prob = 0.30 + p["engagement"] * 0.58
+                if subject == p["preferred_subject"]:
+                    completion_prob = min(0.97, completion_prob + 0.10)
+
+                if random.random() < completion_prob:
+                    watched = random.randint(int(video_len * 0.85), video_len)
+                else:
+                    # Low-engagement users drop off proportionally earlier
+                    max_frac = 0.20 + p["engagement"] * 0.55
+                    watched = random.randint(0, int(video_len * max_frac))
+
+                is_completed = watched >= video_len * 0.9
+
+                # playback_speed_avg: high-skill / preferred-subject users skim faster;
+                # low-engagement users who struggle tend to stay at 1.0x
+                speed_weights = [0.45, 0.35, 0.20]  # 1.0x, 1.5x, 2.0x baseline
+                if p["skill"] >= 0.70 or subject == p["preferred_subject"]:
+                    speed_weights = [0.20, 0.40, 0.40]  # skew faster
+                elif p["skill"] <= 0.40:
+                    speed_weights = [0.65, 0.28, 0.07]  # skew slower
+                playback_speed_avg = random.choices([1.0, 1.5, 2.0], weights=speed_weights)[0]
+
+                # video_duration_seconds: this IS video_len (expose it so AI can calc %)
+                video_duration_seconds = video_len
+
+                # watched_minutes proxy for per-minute event rates
+                watched_minutes = max(1, watched / 60)
+
+                # rewind_count: high skill → fewer rewinds; dense material (slow speed) → more
+                rewind_base = (1.1 - p["skill"]) * 3.0 + (2.0 - playback_speed_avg) * 2.0
+                rewind_count = max(0, round(rewind_base * watched_minutes / 10 + random.gauss(0, 1.5)))
+
+                # pause_count: engagement drives note-taking pauses; low attention adds fatigue pauses
+                pause_base = p["engagement"] * 2.5 + random.gauss(0, 1.2)
+                pause_count = max(0, round(pause_base * watched_minutes / 10))
+
+                # skip_forward_count: boredom / too-easy → more skips; preferred subject + low skill → fewer
+                skip_base = (1.0 - p["engagement"]) * 3.0
+                if subject == p["preferred_subject"] and p["skill"] < 0.55:
+                    skip_base *= 0.4   # struggling in favourite subject → watches carefully
+                skip_forward_count = max(0, round(skip_base * watched_minutes / 10 + random.gauss(0, 1.0)))
+
+                # tab_out_count: low engagement + long video → more tab-outs
+                tab_base = (1.0 - p["engagement"]) * 2.5 + (video_len / 3600) * 2.0
+                tab_out_count = max(0, round(tab_base + random.gauss(0, 1.0)))
+
+                # suggested_problems_solved: engaged users who finish act on recommended problems
+                if is_completed and random.random() < 0.55 + p["engagement"] * 0.35:
+                    suggested_problems_solved = random.randint(1, max(1, round(p["skill"] * 5)))
+                else:
+                    suggested_problems_solved = 0
+
+                rating = None
+                if is_completed and random.random() < 0.7:
+                    # More engaged users skew ratings higher
+                    if p["engagement"] >= 0.72:
+                        weights = [1, 2, 10, 37, 50]
+                    elif p["engagement"] <= 0.40:
+                        weights = [5, 13, 28, 37, 17]
+                    else:
+                        weights = [2, 5, 15, 40, 38]
+                    rating = random.choices([1, 2, 3, 4, 5], weights=weights)[0]
+
+                rows.append([
+                    f"VP{record_num:04d}",
+                    uid,
+                    random.choice(lesson_ids),
+                    subject,
+                    course_slug,
+                    lesson_slug,
+                    watched,
+                    is_completed,
+                    rating if rating is not None else "",
+                    rand_dt(month_start, month_end).strftime("%Y-%m-%d %H:%M:%S"),
+                    playback_speed_avg,
+                    rewind_count,
+                    pause_count,
+                    skip_forward_count,
+                    tab_out_count,
+                    video_duration_seconds,
+                    suggested_problems_solved,
+                ])
+                record_num += 1
+
     return rows
 
 def gen_problem_attempts(n=220):
@@ -432,7 +517,10 @@ write_csv(base / "user_sessions.csv",
     ["session_id","user_id","login_timestamp","logout_timestamp",
      "session_duration_minutes","uninterrupted_minutes","time_of_day",
      "fatigue_score","attention_span_score",
-     "primary_subject","task_switching_count","rage_click_count"],
+     "primary_subject","task_switching_count","rage_click_count",
+     "idle_time_minutes","tab_out_count",
+     "lessons_completed","problems_attempted","quizzes_taken",
+     "device_type","streak_day","days_since_last_session"],
     gen_sessions())
 
 write_csv(base / "video_progress.csv",
