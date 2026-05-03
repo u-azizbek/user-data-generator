@@ -1,221 +1,221 @@
 attempt_id,user_id,problem_id,subject_category,title,difficulty,topic_tag,is_correct,time_taken_seconds,hints_used,fatigue_score,attention_span_score,timestamp
-PA0001,U028,P098,Math,"P(A∩B) if P(A)=0.4, P(B)=0.5, independent",Easy,Probability,True,75,0,4.1,8.3,2026-04-04 12:00:21
-PA0002,U036,P082,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,True,124,0,8.5,3.8,2025-11-04 14:41:51
-PA0003,U035,P053,Computer Science,Trie: insert and search implementation,Hard,Trie,True,504,0,4.8,5.5,2026-03-30 08:21:18
-PA0004,U021,P025,Math,Prove that √2 is irrational,Hard,Proof,False,425,1,7.1,4.2,2025-12-10 12:38:57
-PA0005,U002,P085,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,622,1,6.1,4.7,2026-04-10 15:09:56
-PA0006,U036,P053,Math,Prove that √2 is irrational,Hard,Proof,False,372,1,5.3,6.1,2026-04-15 13:02:09
-PA0007,U024,P100,Computer Science,Detect cycle in a directed graph,Hard,Graph,True,333,1,8.4,1.6,2026-04-21 23:45:04
-PA0008,U034,P031,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,True,285,0,3.5,9.1,2026-04-21 18:22:15
-PA0009,U028,P061,Math,"Find eigenvalues of [[2,1],[1,2]]",Medium,Eigenvalue,False,349,1,4.0,7.9,2025-11-21 17:47:21
-PA0010,U044,P095,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,False,469,1,9.0,1.0,2026-04-20 18:27:26
-PA0011,U043,P057,Math,Find the radius of convergence of Σ xⁿ/n,Hard,Series,False,649,1,10.0,1.5,2026-04-28 03:39:39
-PA0012,U025,P041,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,True,159,0,1.8,10.0,2026-01-16 07:23:55
-PA0013,U050,P013,Computer Science,Design a hash function for strings,Hard,Hash Table,False,609,0,2.6,8.3,2026-04-03 06:29:08
-PA0014,U011,P083,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,False,182,2,1.0,8.2,2026-02-07 07:41:23
-PA0015,U012,P098,Computer Science,BFS vs DFS — when to prefer each?,Easy,Graph,True,98,0,6.7,5.5,2026-04-03 14:25:01
-PA0016,U009,P037,Computer Science,Detect cycle in a directed graph,Hard,Graph,True,661,1,9.0,1.0,2026-01-19 16:12:43
-PA0017,U013,P012,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,True,193,0,3.4,9.2,2026-01-11 09:08:17
-PA0018,U030,P016,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,True,397,2,10.0,1.0,2026-03-17 04:06:49
-PA0019,U001,P064,Computer Science,Longest common subsequence (LCS),Hard,DP,True,587,1,7.5,3.8,2026-01-24 11:59:12
-PA0020,U025,P038,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,True,230,1,2.9,8.8,2026-04-16 06:49:23
-PA0021,U017,P091,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,True,139,0,4.1,5.8,2026-01-27 13:42:13
-PA0022,U028,P077,Computer Science,Bubble sort vs selection sort complexity,Easy,Big-O,True,107,0,3.6,8.1,2025-12-20 18:05:52
-PA0023,U046,P065,Computer Science,Prove that P⊆NP,Hard,Complexity,False,163,0,4.6,6.0,2025-11-09 20:06:02
-PA0024,U032,P036,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,True,212,0,5.9,4.7,2026-01-30 21:26:00
-PA0025,U048,P020,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,245,1,6.0,6.1,2026-01-23 12:20:46
-PA0026,U036,P064,Computer Science,Detect cycle in a directed graph,Hard,Graph,True,527,0,8.2,3.7,2026-04-04 23:58:32
-PA0027,U003,P066,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,False,97,2,5.5,6.0,2026-03-18 16:18:55
-PA0028,U018,P064,Computer Science,Find median of a stream of integers,Hard,Heap,False,530,2,5.9,5.2,2026-03-09 18:26:44
-PA0029,U044,P091,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,True,322,1,3.9,6.8,2026-01-03 19:39:22
-PA0030,U043,P094,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,False,381,1,9.3,3.5,2026-03-03 00:21:16
-PA0031,U037,P099,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,63,3,6.2,6.2,2026-04-17 15:10:15
-PA0032,U026,P056,Math,Find the derivative of sin(x²),Easy,Derivative,True,61,1,3.3,7.9,2026-04-15 12:13:10
-PA0033,U048,P097,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,198,0,8.7,1.0,2026-03-14 00:09:14
-PA0034,U028,P064,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,False,152,0,10.0,1.8,2025-12-07 04:28:52
-PA0035,U034,P038,Computer Science,Detect cycle in a directed graph,Hard,Graph,True,416,0,4.4,7.8,2026-02-10 21:10:32
-PA0036,U037,P075,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,267,0,6.1,4.1,2025-11-15 20:40:02
-PA0037,U006,P086,Computer Science,What is time complexity of merge sort?,Easy,Big-O,True,206,1,10.0,1.3,2025-11-23 02:58:40
-PA0038,U029,P014,Computer Science,Prove that P⊆NP,Hard,Complexity,True,331,0,7.0,4.9,2025-12-22 11:20:10
-PA0039,U028,P079,Computer Science,What is time complexity of merge sort?,Easy,Big-O,True,184,0,8.5,3.3,2025-11-02 03:14:57
-PA0040,U024,P004,Computer Science,Detect cycle in a directed graph,Hard,Graph,True,637,2,9.5,1.7,2026-03-15 01:00:00
-PA0041,U014,P020,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,False,1018,3,10.0,1.0,2025-11-29 04:28:03
-PA0042,U048,P014,Computer Science,BFS vs DFS — when to prefer each?,Easy,Graph,True,162,2,8.7,1.3,2026-02-03 04:28:55
-PA0043,U041,P063,Computer Science,Design a hash function for strings,Hard,Hash Table,False,751,0,7.0,3.4,2026-01-20 17:14:12
-PA0044,U015,P083,Computer Science,What is time complexity of merge sort?,Easy,Big-O,False,138,0,5.4,5.2,2026-02-11 14:05:51
-PA0045,U023,P092,Physics,Derive Bernoulli's equation from energy conservation,Hard,Fluid Mechanics,False,240,0,3.1,7.0,2026-01-24 16:58:45
-PA0046,U043,P021,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,False,149,0,5.5,4.5,2026-04-21 11:53:10
-PA0047,U040,P072,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,True,259,1,9.3,1.2,2026-03-15 02:53:01
-PA0048,U004,P080,Math,"P(A∩B) if P(A)=0.4, P(B)=0.5, independent",Easy,Probability,False,177,2,8.6,3.3,2026-04-21 01:19:12
-PA0049,U015,P086,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,356,1,4.8,6.5,2025-12-14 12:21:40
-PA0050,U007,P014,Computer Science,What is time complexity of merge sort?,Easy,Big-O,False,117,0,8.2,4.0,2026-04-29 22:25:06
-PA0051,U036,P083,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,161,1,5.5,4.8,2025-11-21 11:15:04
-PA0052,U024,P065,Physics,Relativistic momentum at v=0.8c,Hard,Relativity,False,544,0,6.2,4.3,2025-11-27 18:03:58
-PA0053,U011,P053,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,True,357,1,5.2,6.1,2026-01-12 07:40:45
-PA0054,U030,P052,Computer Science,Prove that P⊆NP,Hard,Complexity,False,683,1,6.0,3.6,2026-03-13 11:16:33
-PA0055,U050,P038,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,False,533,0,7.7,1.6,2025-11-12 22:27:47
-PA0056,U027,P019,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,467,2,5.5,4.7,2026-03-13 05:05:14
-PA0057,U045,P011,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,False,238,0,9.6,1.0,2026-03-06 00:41:42
-PA0058,U003,P044,Computer Science,"Generate all subsets of [1,2,3]",Medium,Recursion,False,173,1,8.6,3.5,2026-01-15 17:30:05
-PA0059,U049,P034,Computer Science,Find height of a BST,Medium,Tree,False,217,0,4.6,6.3,2025-11-05 13:09:11
-PA0060,U041,P096,Computer Science,"Generate all subsets of [1,2,3]",Medium,Recursion,False,284,3,9.5,2.3,2025-11-25 01:00:37
-PA0061,U038,P095,Computer Science,Implement a min-heap insert operation,Medium,Heap,True,257,1,8.7,1.7,2026-04-23 15:55:16
-PA0062,U016,P055,Math,"P(A∩B) if P(A)=0.4, P(B)=0.5, independent",Easy,Probability,True,67,1,3.2,7.7,2026-02-09 06:50:23
-PA0063,U009,P063,Physics,"Two charges q=1µC, r=0.1 m. Find E field.",Medium,Electric Field,True,170,0,4.7,6.4,2026-01-26 15:16:31
-PA0064,U047,P059,Physics,Relativistic momentum at v=0.8c,Hard,Relativity,False,739,0,6.3,3.3,2025-12-02 14:54:08
-PA0065,U031,P048,Math,Find the radius of convergence of Σ xⁿ/n,Hard,Series,False,661,2,6.3,4.6,2025-12-01 10:55:33
-PA0066,U020,P095,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,False,119,1,6.4,5.3,2025-11-06 10:23:09
-PA0067,U032,P017,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,75,0,3.3,7.7,2026-02-15 07:42:31
-PA0068,U049,P050,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,False,249,1,8.1,2.7,2026-03-04 14:07:11
-PA0069,U015,P072,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,False,192,0,10.0,1.0,2026-02-14 01:13:00
-PA0070,U042,P003,Math,Prove that √2 is irrational,Hard,Proof,True,183,0,4.4,6.5,2026-02-17 14:46:23
-PA0071,U008,P076,Computer Science,Find median of a stream of integers,Hard,Heap,False,699,1,3.8,7.4,2026-02-12 06:38:40
-PA0072,U003,P070,Physics,Relativistic momentum at v=0.8c,Hard,Relativity,False,380,0,1.4,10.0,2026-05-01 08:03:02
-PA0073,U011,P013,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,False,234,2,6.2,5.8,2025-12-06 11:17:56
-PA0074,U021,P066,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,True,225,2,4.8,7.6,2026-04-23 09:43:58
-PA0075,U049,P087,Computer Science,Design a hash function for strings,Hard,Hash Table,False,319,0,1.9,9.4,2025-11-23 08:19:05
-PA0076,U007,P048,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,True,823,1,8.0,2.6,2026-02-16 17:07:26
-PA0077,U035,P008,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,True,957,1,9.4,1.0,2025-12-18 14:32:07
-PA0078,U031,P069,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,101,1,7.1,5.7,2025-12-19 17:13:38
-PA0079,U037,P044,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,False,321,0,6.3,3.6,2025-11-18 10:06:09
-PA0080,U041,P018,Physics,RLC circuit: find resonant frequency,Hard,Circuit,True,376,0,4.6,6.1,2026-03-18 10:22:23
-PA0081,U042,P010,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,True,51,0,4.6,6.3,2026-02-01 12:47:09
-PA0082,U035,P099,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,False,275,1,6.8,3.4,2026-04-11 13:47:30
-PA0083,U045,P039,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,109,1,8.2,3.0,2026-01-29 20:18:12
-PA0084,U046,P015,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,111,1,6.9,3.0,2026-02-04 21:18:54
-PA0085,U018,P073,Computer Science,Longest common subsequence (LCS),Hard,DP,False,477,2,6.2,4.0,2026-02-04 22:15:34
-PA0086,U015,P059,Computer Science,Implement a min-heap insert operation,Medium,Heap,False,69,1,5.8,3.8,2026-04-01 21:33:42
-PA0087,U001,P093,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,False,534,0,6.1,4.5,2026-03-11 16:52:20
-PA0088,U015,P029,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,True,386,0,4.7,5.6,2026-04-28 08:00:52
-PA0089,U045,P033,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,160,1,7.8,3.4,2026-04-28 01:30:26
-PA0090,U016,P013,Math,Integrate x·eˣ by parts,Medium,Integral,True,185,1,4.4,6.8,2025-12-17 06:50:03
-PA0091,U041,P079,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,False,76,2,3.9,6.7,2025-11-25 05:43:59
-PA0092,U041,P085,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,126,0,4.9,7.6,2025-11-20 18:33:03
-PA0093,U040,P014,Math,Integrate x·eˣ by parts,Medium,Integral,True,524,2,7.0,2.6,2026-01-14 13:11:49
-PA0094,U001,P057,Computer Science,Implement a min-heap insert operation,Medium,Heap,False,451,1,10.0,1.3,2025-11-14 02:46:48
-PA0095,U012,P040,Math,"Find eigenvalues of [[2,1],[1,2]]",Medium,Eigenvalue,False,165,0,2.8,9.6,2026-04-04 18:24:30
-PA0096,U039,P045,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,True,70,1,5.1,6.0,2026-01-11 14:52:20
-PA0097,U013,P079,Math,Prove that √2 is irrational,Hard,Proof,False,621,0,5.0,7.5,2026-04-26 09:55:04
-PA0098,U020,P080,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,True,64,1,3.9,7.6,2025-12-02 12:16:46
-PA0099,U014,P015,Math,Integrate x·eˣ by parts,Medium,Integral,True,477,3,9.4,2.5,2026-03-23 15:25:10
-PA0100,U010,P093,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,True,257,2,8.5,2.7,2025-12-08 17:59:08
-PA0101,U012,P027,Physics,Relativistic momentum at v=0.8c,Hard,Relativity,False,639,1,5.2,6.6,2026-02-16 16:10:49
-PA0102,U020,P016,Physics,"Two charges q=1µC, r=0.1 m. Find E field.",Medium,Electric Field,False,317,0,7.3,4.7,2026-01-11 18:39:01
-PA0103,U010,P038,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,216,0,4.9,5.6,2025-12-07 19:47:30
-PA0104,U010,P061,Physics,"Two charges q=1µC, r=0.1 m. Find E field.",Medium,Electric Field,False,111,1,4.6,7.6,2025-11-11 08:12:17
-PA0105,U043,P064,Computer Science,Implement binary search iteratively,Easy,Binary Search,True,107,0,6.1,3.7,2025-12-03 12:17:48
-PA0106,U031,P040,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,108,1,9.6,1.5,2026-01-17 20:32:38
-PA0107,U028,P055,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,80,0,6.6,4.3,2025-12-01 12:38:54
-PA0108,U029,P011,Physics,"Ohm's law: V=12 V, R=4 Ω. Find I.",Easy,Circuit,True,112,0,6.3,4.9,2026-01-19 09:51:29
-PA0109,U019,P096,Computer Science,Longest common subsequence (LCS),Hard,DP,True,368,1,9.1,2.8,2026-02-15 03:34:56
-PA0110,U050,P039,Computer Science,Trie: insert and search implementation,Hard,Trie,False,683,1,3.9,9.2,2025-12-24 07:05:51
-PA0111,U019,P027,Physics,RLC circuit: find resonant frequency,Hard,Circuit,False,894,0,6.3,5.0,2026-01-18 09:53:46
-PA0112,U031,P090,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,320,1,10.0,1.0,2026-02-22 23:38:06
-PA0113,U027,P054,Math,Integrate x·eˣ by parts,Medium,Integral,True,363,1,7.0,4.3,2026-01-27 09:01:16
-PA0114,U028,P043,Computer Science,Prove that P⊆NP,Hard,Complexity,True,502,1,5.9,4.5,2026-01-18 07:50:04
-PA0115,U037,P082,Computer Science,Prove that P⊆NP,Hard,Complexity,False,812,1,10.0,1.5,2026-02-26 02:11:47
-PA0116,U020,P037,Math,"Find eigenvalues of [[2,1],[1,2]]",Medium,Eigenvalue,True,228,1,5.3,7.4,2025-11-21 06:08:04
-PA0117,U014,P062,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,True,423,2,9.2,1.9,2026-03-09 01:49:06
-PA0118,U048,P040,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,False,286,1,6.1,4.9,2026-04-25 11:01:22
-PA0119,U038,P063,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,False,413,2,10.0,3.2,2026-03-20 04:23:59
-PA0120,U030,P023,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,55,0,6.9,2.9,2025-11-08 14:08:53
-PA0121,U027,P036,Math,"Find eigenvalues of [[2,1],[1,2]]",Medium,Eigenvalue,True,260,1,6.4,4.7,2026-04-24 18:08:20
-PA0122,U041,P010,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,True,189,0,4.3,6.6,2026-03-10 10:50:47
-PA0123,U049,P096,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,False,259,0,8.1,3.2,2026-03-29 20:19:51
-PA0124,U026,P085,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,True,159,1,1.7,9.3,2025-11-08 08:02:33
-PA0125,U016,P098,Computer Science,BFS vs DFS — when to prefer each?,Easy,Graph,True,141,1,5.0,5.4,2025-11-28 05:38:21
-PA0126,U001,P067,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,False,308,1,5.9,5.1,2025-11-30 19:20:43
-PA0127,U042,P026,Computer Science,Implement a min-heap insert operation,Medium,Heap,False,304,2,10.0,1.0,2026-03-09 04:00:40
-PA0128,U006,P022,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,True,387,0,3.4,7.9,2025-11-06 10:13:45
-PA0129,U047,P046,Math,Find the derivative of sin(x²),Easy,Derivative,True,146,2,4.9,6.5,2026-01-20 17:12:33
-PA0130,U021,P009,Math,Find the derivative of sin(x²),Easy,Derivative,True,174,1,10.0,1.0,2026-01-18 02:06:21
-PA0131,U014,P081,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,False,192,3,10.0,1.0,2026-03-30 01:01:10
-PA0132,U045,P043,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,False,820,0,7.2,3.2,2026-04-29 12:43:52
-PA0133,U002,P095,Computer Science,Find median of a stream of integers,Hard,Heap,False,667,0,6.8,3.9,2026-02-22 14:28:10
-PA0134,U028,P057,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,True,92,0,2.8,7.7,2025-11-16 09:58:57
-PA0135,U048,P032,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,False,143,2,9.8,1.0,2025-12-25 00:09:47
-PA0136,U014,P081,Computer Science,What is time complexity of merge sort?,Easy,Big-O,True,98,1,10.0,1.1,2026-04-26 01:12:41
-PA0137,U001,P065,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,False,672,1,6.8,4.9,2026-02-04 11:13:08
-PA0138,U006,P026,Physics,Derive Bernoulli's equation from energy conservation,Hard,Fluid Mechanics,False,740,0,4.7,6.4,2026-01-30 16:43:25
-PA0139,U018,P055,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,82,0,5.0,6.2,2026-01-09 19:46:23
-PA0140,U006,P043,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,134,0,3.0,8.2,2026-02-13 07:31:21
-PA0141,U009,P050,Computer Science,BFS vs DFS — when to prefer each?,Easy,Graph,True,89,0,10.0,1.3,2025-12-09 00:06:05
-PA0142,U032,P033,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,False,612,1,2.6,9.9,2026-02-23 05:43:07
-PA0143,U050,P081,Computer Science,"Generate all subsets of [1,2,3]",Medium,Recursion,False,557,2,8.3,1.0,2026-02-07 22:56:49
-PA0144,U046,P021,Computer Science,What is time complexity of merge sort?,Easy,Big-O,True,147,1,6.6,4.4,2026-03-16 10:27:08
-PA0145,U001,P089,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,986,1,8.5,3.3,2025-11-18 22:10:34
-PA0146,U020,P100,Computer Science,Longest common subsequence (LCS),Hard,DP,False,659,1,9.6,1.6,2026-03-08 20:46:02
-PA0147,U023,P084,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,False,273,1,5.5,5.9,2026-03-26 09:20:06
-PA0148,U019,P024,Computer Science,Design a hash function for strings,Hard,Hash Table,True,378,0,8.2,3.0,2025-12-04 03:12:47
-PA0149,U013,P049,Math,Find the radius of convergence of Σ xⁿ/n,Hard,Series,False,256,1,7.8,5.5,2025-12-06 11:34:50
-PA0150,U008,P075,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,120,2,3.5,6.0,2026-01-06 10:32:36
-PA0151,U003,P044,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,118,0,4.4,5.6,2026-02-10 10:15:19
-PA0152,U021,P093,Math,"P(A∩B) if P(A)=0.4, P(B)=0.5, independent",Easy,Probability,True,154,1,9.0,2.5,2026-03-10 03:29:22
-PA0153,U009,P001,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,True,62,0,10.0,1.0,2025-11-24 20:43:48
-PA0154,U041,P011,Physics,Ball thrown at 20 m/s upward. Find max height.,Easy,Kinematics,False,119,1,10.0,2.3,2026-03-04 01:36:58
-PA0155,U023,P092,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,292,1,8.3,1.3,2026-04-30 18:02:59
-PA0156,U033,P062,Math,"Find eigenvalues of [[2,1],[1,2]]",Medium,Eigenvalue,False,80,0,6.6,5.3,2026-02-05 16:29:56
-PA0157,U043,P036,Computer Science,Reverse a singly linked list in-place,Medium,Linked List,True,299,0,3.1,7.2,2025-12-18 06:07:16
-PA0158,U015,P043,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,False,193,0,5.1,5.0,2026-03-10 07:28:16
-PA0159,U015,P030,Computer Science,Prove that P⊆NP,Hard,Complexity,False,555,0,4.3,7.8,2026-04-29 09:26:29
-PA0160,U015,P041,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,146,1,2.1,8.0,2025-12-27 12:02:55
-PA0161,U025,P078,Computer Science,Implement a min-heap insert operation,Medium,Heap,False,179,0,1.6,9.1,2025-11-01 07:49:20
-PA0162,U038,P077,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,False,117,0,4.7,5.7,2026-01-16 18:17:21
-PA0163,U019,P028,Math,Find the radius of convergence of Σ xⁿ/n,Hard,Series,False,623,0,10.0,1.0,2026-03-10 04:45:32
-PA0164,U032,P007,Physics,Derive Bernoulli's equation from energy conservation,Hard,Fluid Mechanics,False,1018,0,9.8,1.0,2026-01-13 03:35:22
-PA0165,U050,P097,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,False,1104,1,9.0,1.1,2026-02-03 15:56:10
-PA0166,U026,P075,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,False,82,1,6.1,4.8,2026-02-11 11:56:00
-PA0167,U004,P093,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,True,330,1,7.9,4.1,2026-01-28 20:15:21
-PA0168,U037,P023,Math,Prove that √2 is irrational,Hard,Proof,False,499,1,6.5,5.3,2026-04-02 12:41:30
-PA0169,U004,P084,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,313,0,4.5,6.4,2026-03-07 05:40:31
-PA0170,U048,P002,Physics,RLC circuit: find resonant frequency,Hard,Circuit,False,790,0,6.0,5.3,2026-03-15 07:59:51
-PA0171,U008,P050,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,175,1,7.0,3.4,2025-11-24 16:48:05
-PA0172,U031,P003,Computer Science,Implement a min-heap insert operation,Medium,Heap,False,300,1,9.4,2.1,2026-01-24 04:59:08
-PA0173,U026,P016,Computer Science,Trie: insert and search implementation,Hard,Trie,False,546,1,10.0,1.2,2026-02-13 03:53:00
-PA0174,U012,P097,Computer Science,Implement a min-heap insert operation,Medium,Heap,True,140,0,5.0,6.7,2025-12-05 22:34:11
-PA0175,U003,P085,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,104,0,2.7,8.5,2026-02-07 06:49:19
-PA0176,U035,P006,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,True,145,2,10.0,1.0,2026-02-21 01:20:52
-PA0177,U016,P034,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,99,0,6.1,5.1,2025-11-28 12:13:03
-PA0178,U025,P035,Computer Science,Find median of a stream of integers,Hard,Heap,False,440,2,5.5,6.7,2025-12-02 17:07:24
-PA0179,U041,P078,Computer Science,Detect cycle in a directed graph,Hard,Graph,False,451,1,5.8,4.0,2025-12-08 09:42:31
-PA0180,U016,P029,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,False,341,3,9.0,1.5,2025-11-25 04:46:37
-PA0181,U018,P090,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,91,0,3.8,8.4,2026-01-13 05:40:27
-PA0182,U037,P069,Physics,Heat to raise 1 kg water by 10°C (c=4186 J/kg·K),Medium,Thermodynamics,False,303,1,6.6,5.1,2025-12-23 15:12:10
-PA0183,U036,P093,Computer Science,Find median of a stream of integers,Hard,Heap,False,500,1,9.6,2.1,2026-04-14 23:33:46
-PA0184,U041,P055,Physics,Derive Bernoulli's equation from energy conservation,Hard,Fluid Mechanics,False,745,2,9.8,1.0,2026-03-31 23:32:37
-PA0185,U034,P012,Computer Science,Find median of a stream of integers,Hard,Heap,True,438,1,6.2,5.1,2026-04-29 09:16:32
-PA0186,U011,P018,Computer Science,What is time complexity of merge sort?,Easy,Big-O,True,114,0,5.2,6.5,2025-11-17 10:11:42
-PA0187,U031,P032,Physics,Heat to raise 1 kg water by 10°C (c=4186 J/kg·K),Medium,Thermodynamics,False,414,0,10.0,1.0,2026-03-14 00:53:57
-PA0188,U048,P029,Computer Science,Find median of a stream of integers,Hard,Heap,False,764,1,10.0,1.0,2026-04-09 21:09:05
-PA0189,U012,P099,Math,"P(A∩B) if P(A)=0.4, P(B)=0.5, independent",Easy,Probability,True,75,1,9.0,2.3,2026-04-12 23:55:45
-PA0190,U008,P066,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,True,122,0,4.9,6.9,2026-02-02 19:31:27
-PA0191,U003,P013,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,True,244,1,8.8,3.5,2026-02-28 22:55:03
-PA0192,U028,P051,Physics,"Two charges q=1µC, r=0.1 m. Find E field.",Medium,Electric Field,True,309,2,6.0,5.3,2025-11-17 10:56:04
-PA0193,U024,P091,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,True,123,0,10.0,1.0,2026-01-23 04:12:57
-PA0194,U013,P035,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,77,0,1.3,9.6,2025-12-26 07:43:44
-PA0195,U008,P015,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,False,415,0,7.1,2.9,2026-02-15 19:45:43
-PA0196,U007,P056,Math,"Find eigenvalues of [[2,1],[1,2]]",Medium,Eigenvalue,False,273,1,9.0,1.9,2025-12-01 04:52:41
-PA0197,U031,P055,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,True,83,0,3.0,8.7,2026-02-03 08:35:39
-PA0198,U013,P016,Physics,Derive Bernoulli's equation from energy conservation,Hard,Fluid Mechanics,True,229,1,10.0,1.4,2026-04-01 23:43:30
-PA0199,U009,P044,Physics,Ball thrown at 20 m/s upward. Find max height.,Easy,Kinematics,True,148,2,9.6,2.1,2025-12-24 04:17:15
-PA0200,U028,P007,Physics,Ball thrown at 20 m/s upward. Find max height.,Easy,Kinematics,True,156,2,10.0,1.0,2026-02-08 00:08:13
-PA0201,U012,P013,Math,Find the derivative of sin(x²),Easy,Derivative,False,110,0,10.0,2.5,2025-11-11 02:56:46
-PA0202,U043,P084,Math,Prove that √2 is irrational,Hard,Proof,False,1026,1,10.0,1.0,2026-02-16 03:25:34
-PA0203,U018,P013,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,True,37,1,5.8,6.2,2026-01-14 13:47:59
-PA0204,U005,P033,Computer Science,Bubble sort vs selection sort complexity,Easy,Big-O,False,132,2,6.7,4.5,2026-01-06 14:01:13
-PA0205,U049,P090,Computer Science,"Generate all subsets of [1,2,3]",Medium,Recursion,True,76,1,5.3,4.1,2026-04-23 18:35:49
-PA0206,U009,P022,Physics,Ball thrown at 20 m/s upward. Find max height.,Easy,Kinematics,True,46,0,7.3,3.5,2026-02-18 22:33:56
-PA0207,U029,P065,Computer Science,Design a hash function for strings,Hard,Hash Table,True,161,1,5.0,6.2,2026-02-18 05:26:00
-PA0208,U046,P082,Computer Science,Longest common subsequence (LCS),Hard,DP,True,605,0,3.8,7.1,2025-12-21 06:15:24
-PA0209,U010,P042,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,286,0,7.7,4.2,2025-11-26 19:41:29
-PA0210,U006,P029,Computer Science,Find median of a stream of integers,Hard,Heap,False,771,1,7.3,2.6,2026-02-15 15:48:26
-PA0211,U047,P082,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,False,183,0,5.2,5.1,2025-12-20 16:59:12
-PA0212,U039,P093,Computer Science,Reverse a singly linked list in-place,Medium,Linked List,False,357,2,7.1,4.1,2026-04-08 14:46:59
-PA0213,U028,P021,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,False,138,1,8.7,2.8,2026-04-25 04:24:29
-PA0214,U012,P094,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,False,476,1,7.7,4.4,2026-02-27 00:39:22
-PA0215,U049,P077,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,False,112,0,3.6,7.6,2025-11-20 08:46:30
-PA0216,U001,P021,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,True,872,0,8.2,2.1,2025-11-21 15:34:31
-PA0217,U020,P019,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,True,237,0,7.1,3.3,2025-12-01 00:05:03
-PA0218,U001,P015,Math,Find the derivative of sin(x²),Easy,Derivative,False,155,0,9.1,1.4,2025-12-15 00:22:57
-PA0219,U032,P055,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,76,3,7.0,4.1,2025-12-14 14:21:01
-PA0220,U034,P064,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,43,0,5.8,6.7,2025-12-06 05:13:27
+PA0001,U018,P023,Physics,"Ohm's law: V=12 V, R=4 Ω. Find I.",Easy,Circuit,False,171,1,6.3,6.2,2026-02-15 10:06:43
+PA0002,U031,P017,Physics,"Ohm's law: V=12 V, R=4 Ω. Find I.",Easy,Circuit,True,146,1,10.0,1.4,2026-02-24 01:22:32
+PA0003,U034,P093,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,True,84,1,6.6,5.0,2026-01-22 19:29:24
+PA0004,U001,P097,Computer Science,BFS vs DFS — when to prefer each?,Easy,Graph,False,74,0,8.2,3.8,2026-03-29 15:36:30
+PA0005,U008,P011,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,True,214,2,4.9,6.9,2026-03-28 13:38:56
+PA0006,U010,P045,Math,Find the derivative of sin(x²),Easy,Derivative,True,127,0,6.5,4.6,2026-04-10 15:24:20
+PA0007,U048,P075,Computer Science,BFS vs DFS — when to prefer each?,Easy,Graph,False,179,0,7.7,3.1,2026-04-14 19:32:15
+PA0008,U041,P093,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,152,1,9.4,1.0,2026-01-13 01:12:38
+PA0009,U044,P087,Physics,Heat to raise 1 kg water by 10°C (c=4186 J/kg·K),Medium,Thermodynamics,False,308,2,7.9,2.7,2026-04-15 23:09:52
+PA0010,U025,P032,Computer Science,Implement a min-heap insert operation,Medium,Heap,True,115,0,6.1,3.5,2026-01-10 18:49:46
+PA0011,U040,P043,Computer Science,What is time complexity of merge sort?,Easy,Big-O,True,156,1,7.3,4.3,2026-01-29 01:29:08
+PA0012,U003,P072,Computer Science,Implement a min-heap insert operation,Medium,Heap,True,15,2,2.6,8.3,2025-11-19 16:14:38
+PA0013,U037,P046,Computer Science,Reverse a singly linked list in-place,Medium,Linked List,False,377,1,10.0,1.0,2026-03-10 23:44:41
+PA0014,U032,P053,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,False,126,0,2.0,7.9,2025-12-07 06:58:31
+PA0015,U041,P047,Physics,Relativistic momentum at v=0.8c,Hard,Relativity,False,1064,0,10.0,1.0,2025-12-26 01:49:01
+PA0016,U010,P001,Computer Science,Find height of a BST,Medium,Tree,False,412,1,3.5,7.5,2025-12-31 06:27:57
+PA0017,U003,P004,Math,Find the radius of convergence of Σ xⁿ/n,Hard,Series,False,754,2,10.0,2.2,2026-04-20 23:47:56
+PA0018,U036,P026,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,True,52,0,6.5,5.7,2025-12-11 11:32:51
+PA0019,U016,P076,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,473,2,8.4,3.4,2026-01-21 17:06:36
+PA0020,U004,P006,Computer Science,Trie: insert and search implementation,Hard,Trie,False,433,0,4.8,5.3,2026-02-24 13:46:48
+PA0021,U012,P034,Computer Science,Detect cycle in a directed graph,Hard,Graph,False,296,0,6.1,6.2,2025-12-15 18:51:53
+PA0022,U046,P011,Math,Prove that √2 is irrational,Hard,Proof,True,790,1,9.2,1.9,2026-01-26 02:46:25
+PA0023,U009,P001,Math,Prove that √2 is irrational,Hard,Proof,False,352,0,3.2,9.9,2026-03-04 08:11:50
+PA0024,U023,P002,Computer Science,Reverse a singly linked list in-place,Medium,Linked List,False,422,0,6.9,6.0,2025-11-15 07:14:04
+PA0025,U040,P030,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,True,87,1,4.5,5.5,2026-04-30 13:30:06
+PA0026,U031,P064,Physics,Derive Bernoulli's equation from energy conservation,Hard,Fluid Mechanics,False,391,1,5.6,5.7,2026-04-17 16:16:06
+PA0027,U031,P094,Physics,Relativistic momentum at v=0.8c,Hard,Relativity,True,407,1,1.8,8.9,2026-04-24 08:42:46
+PA0028,U042,P089,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,True,230,1,8.5,2.4,2026-03-31 16:07:39
+PA0029,U033,P092,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,True,142,0,6.1,4.2,2026-03-16 18:40:49
+PA0030,U035,P060,Computer Science,What is time complexity of merge sort?,Easy,Big-O,True,186,2,9.2,1.4,2026-01-30 01:27:45
+PA0031,U010,P091,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,True,35,1,10.0,2.1,2026-02-26 03:24:10
+PA0032,U019,P076,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,297,2,6.4,5.1,2026-01-25 14:21:17
+PA0033,U023,P001,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,False,93,1,5.2,6.2,2026-04-05 14:56:44
+PA0034,U046,P007,Computer Science,Find height of a BST,Medium,Tree,True,197,0,7.6,2.9,2025-12-21 20:29:49
+PA0035,U041,P005,Math,Prove that √2 is irrational,Hard,Proof,False,666,1,4.8,6.6,2025-11-04 05:38:33
+PA0036,U032,P053,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,True,176,1,10.0,1.0,2026-02-19 23:56:43
+PA0037,U039,P023,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,True,787,3,10.0,2.5,2025-11-24 02:53:19
+PA0038,U025,P004,Computer Science,Implement a min-heap insert operation,Medium,Heap,True,128,0,2.0,9.3,2026-01-22 05:32:03
+PA0039,U045,P064,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,True,531,0,8.4,1.3,2026-04-21 16:20:32
+PA0040,U017,P009,Math,Find the radius of convergence of Σ xⁿ/n,Hard,Series,False,572,2,8.8,2.0,2026-01-13 20:55:46
+PA0041,U018,P038,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,False,596,1,5.2,5.5,2026-01-23 07:55:30
+PA0042,U036,P056,Computer Science,Trie: insert and search implementation,Hard,Trie,False,590,1,7.5,3.5,2025-12-15 09:32:37
+PA0043,U026,P099,Physics,Heat to raise 1 kg water by 10°C (c=4186 J/kg·K),Medium,Thermodynamics,True,235,0,4.7,5.3,2025-12-31 19:34:13
+PA0044,U042,P089,Physics,RLC circuit: find resonant frequency,Hard,Circuit,True,225,0,10.0,1.0,2026-04-06 03:45:33
+PA0045,U022,P094,Computer Science,What is time complexity of merge sort?,Easy,Big-O,True,137,2,9.0,1.3,2026-01-09 03:13:30
+PA0046,U001,P095,Math,Integrate x·eˣ by parts,Medium,Integral,True,230,1,2.7,9.3,2025-12-09 06:25:48
+PA0047,U032,P072,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,False,570,2,6.3,3.8,2026-02-23 14:57:11
+PA0048,U023,P040,Math,"P(A∩B) if P(A)=0.4, P(B)=0.5, independent",Easy,Probability,False,103,2,5.1,5.9,2025-11-08 11:11:49
+PA0049,U014,P098,Physics,"Two charges q=1µC, r=0.1 m. Find E field.",Medium,Electric Field,False,240,0,3.0,7.9,2026-04-21 19:05:10
+PA0050,U022,P052,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,141,1,9.1,2.2,2026-04-04 20:33:35
+PA0051,U023,P029,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,True,326,2,5.5,5.0,2026-01-29 11:06:23
+PA0052,U034,P081,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,422,0,7.3,3.7,2026-03-19 19:43:59
+PA0053,U006,P098,Computer Science,Reverse a singly linked list in-place,Medium,Linked List,True,179,2,4.2,5.1,2026-01-02 22:47:00
+PA0054,U027,P012,Math,Integrate x·eˣ by parts,Medium,Integral,True,362,1,5.8,4.3,2025-12-07 05:02:44
+PA0055,U043,P033,Physics,Relativistic momentum at v=0.8c,Hard,Relativity,False,608,2,4.5,4.9,2026-02-01 08:35:08
+PA0056,U034,P056,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,False,333,1,10.0,2.1,2026-04-02 03:32:34
+PA0057,U016,P076,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,577,0,6.9,2.8,2026-04-13 21:42:32
+PA0058,U035,P028,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,True,236,0,5.4,4.9,2026-04-09 09:37:11
+PA0059,U018,P078,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,False,604,2,7.0,4.0,2026-03-31 13:37:19
+PA0060,U016,P099,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,False,159,2,9.2,1.9,2026-01-11 02:55:53
+PA0061,U024,P091,Physics,"Ohm's law: V=12 V, R=4 Ω. Find I.",Easy,Circuit,True,128,0,7.2,4.6,2026-01-30 14:19:08
+PA0062,U013,P075,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,True,331,1,4.8,5.5,2025-12-19 07:10:23
+PA0063,U031,P044,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,176,0,6.0,5.3,2026-03-12 16:39:29
+PA0064,U005,P080,Physics,"Two charges q=1µC, r=0.1 m. Find E field.",Medium,Electric Field,False,251,0,4.0,6.9,2026-04-16 10:59:44
+PA0065,U010,P018,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,99,2,3.8,7.2,2026-02-24 06:51:39
+PA0066,U037,P026,Computer Science,Detect cycle in a directed graph,Hard,Graph,False,435,0,6.8,3.8,2026-01-27 14:50:30
+PA0067,U004,P028,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,True,44,0,3.0,8.1,2026-01-01 17:02:12
+PA0068,U048,P035,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,False,550,1,5.6,4.2,2026-01-07 05:30:09
+PA0069,U001,P070,Computer Science,Prove that P⊆NP,Hard,Complexity,False,539,1,5.5,6.1,2026-03-20 13:58:28
+PA0070,U033,P032,Math,Find the derivative of sin(x²),Easy,Derivative,True,144,2,8.7,1.5,2025-11-15 15:56:04
+PA0071,U018,P026,Physics,Ball thrown at 20 m/s upward. Find max height.,Easy,Kinematics,True,71,2,5.5,5.9,2025-11-20 12:35:49
+PA0072,U044,P073,Computer Science,Implement binary search iteratively,Easy,Binary Search,False,142,2,10.0,1.0,2026-04-21 04:00:44
+PA0073,U044,P062,Computer Science,Detect cycle in a directed graph,Hard,Graph,False,987,1,7.9,2.9,2025-11-17 16:34:23
+PA0074,U012,P056,Math,Find the derivative of sin(x²),Easy,Derivative,True,127,0,4.1,7.4,2025-11-05 11:48:56
+PA0075,U016,P015,Physics,Heat to raise 1 kg water by 10°C (c=4186 J/kg·K),Medium,Thermodynamics,False,341,1,10.0,1.0,2026-01-10 21:52:48
+PA0076,U050,P045,Computer Science,Prove that P⊆NP,Hard,Complexity,False,696,1,7.7,2.1,2025-11-16 15:10:21
+PA0077,U022,P097,Physics,Relativistic momentum at v=0.8c,Hard,Relativity,False,474,0,3.9,7.2,2025-11-23 07:23:48
+PA0078,U010,P004,Physics,"Two charges q=1µC, r=0.1 m. Find E field.",Medium,Electric Field,False,298,0,4.0,7.7,2026-02-22 12:41:11
+PA0079,U024,P092,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,True,130,0,2.4,8.5,2025-12-11 06:53:43
+PA0080,U049,P088,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,True,191,1,6.9,4.6,2026-01-13 22:34:00
+PA0081,U008,P095,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,552,1,6.6,3.6,2026-01-28 18:08:29
+PA0082,U027,P062,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,True,311,0,3.8,7.4,2026-04-29 05:52:22
+PA0083,U002,P011,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,False,185,1,10.0,1.3,2026-02-16 00:48:30
+PA0084,U049,P008,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,False,71,1,10.0,1.3,2025-12-06 04:06:12
+PA0085,U025,P021,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,72,2,2.6,8.3,2025-12-14 07:30:28
+PA0086,U018,P062,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,81,1,2.9,7.3,2026-02-09 16:49:21
+PA0087,U022,P041,Computer Science,BFS vs DFS — when to prefer each?,Easy,Graph,True,66,0,10.0,1.0,2026-02-11 02:30:00
+PA0088,U011,P080,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,True,104,1,1.4,8.2,2026-02-04 05:06:54
+PA0089,U035,P026,Computer Science,Implement binary search iteratively,Easy,Binary Search,False,195,1,7.0,3.6,2026-04-23 02:09:32
+PA0090,U007,P053,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,False,125,0,6.0,4.4,2026-01-29 12:24:28
+PA0091,U014,P022,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,True,266,0,5.6,4.4,2026-02-17 20:22:10
+PA0092,U045,P015,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,False,96,0,2.7,8.6,2026-03-29 06:40:46
+PA0093,U025,P040,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,True,459,2,9.1,3.0,2026-03-15 04:32:27
+PA0094,U045,P089,Computer Science,Trie: insert and search implementation,Hard,Trie,False,715,1,6.2,5.2,2025-11-11 22:17:40
+PA0095,U027,P044,Math,Prove that √2 is irrational,Hard,Proof,False,924,2,10.0,1.0,2026-02-25 01:29:34
+PA0096,U007,P033,Physics,RLC circuit: find resonant frequency,Hard,Circuit,False,509,0,6.9,3.8,2025-12-23 21:08:43
+PA0097,U032,P034,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,345,1,10.0,1.0,2025-12-05 20:32:59
+PA0098,U023,P002,Physics,Force on m=5 kg with a=3 m/s²,Easy,Newton's Law,True,119,0,9.6,1.0,2026-04-10 03:54:52
+PA0099,U050,P060,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,116,1,7.4,4.6,2026-01-17 15:52:07
+PA0100,U009,P025,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,False,240,0,6.9,5.4,2026-04-27 14:39:16
+PA0101,U022,P018,Computer Science,Prove that P⊆NP,Hard,Complexity,True,709,0,4.1,6.9,2026-04-29 18:12:40
+PA0102,U008,P035,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,False,727,0,7.9,4.6,2025-12-14 22:55:39
+PA0103,U007,P002,Computer Science,Bubble sort vs selection sort complexity,Easy,Big-O,True,128,1,10.0,1.0,2026-02-10 23:39:30
+PA0104,U007,P086,Computer Science,Implement binary search iteratively,Easy,Binary Search,False,171,1,10.0,1.0,2026-03-06 23:41:24
+PA0105,U002,P066,Math,Find the radius of convergence of Σ xⁿ/n,Hard,Series,False,307,1,3.8,7.2,2025-12-25 06:36:49
+PA0106,U028,P080,Computer Science,Implement binary search iteratively,Easy,Binary Search,True,107,0,5.1,7.4,2026-01-05 07:33:55
+PA0107,U046,P023,Math,"Find gradient of f(x,y)=x²y+y³",Medium,Multivariable,True,218,1,4.0,8.2,2025-12-08 09:12:36
+PA0108,U025,P023,Math,Prove that √2 is irrational,Hard,Proof,False,669,1,10.0,1.6,2026-04-25 02:46:33
+PA0109,U003,P050,Computer Science,Find height of a BST,Medium,Tree,False,204,2,9.1,3.0,2025-12-17 23:09:29
+PA0110,U006,P040,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,True,215,0,10.0,1.5,2025-11-19 00:46:58
+PA0111,U009,P069,Physics,Satellite orbit radius r. Find orbital speed.,Hard,Gravitation,True,496,1,6.8,4.5,2026-03-03 12:19:43
+PA0112,U039,P065,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,155,0,8.3,4.7,2025-12-20 23:21:28
+PA0113,U028,P003,Physics,RLC circuit: find resonant frequency,Hard,Circuit,False,749,1,5.7,4.8,2025-12-26 22:02:16
+PA0114,U037,P062,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,True,90,1,7.3,4.5,2026-03-28 09:44:51
+PA0115,U041,P034,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,118,0,5.4,4.4,2026-02-19 13:12:54
+PA0116,U030,P028,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,633,1,6.1,5.9,2026-02-15 16:36:46
+PA0117,U018,P014,Physics,Derive Bernoulli's equation from energy conservation,Hard,Fluid Mechanics,False,342,0,6.9,3.3,2026-03-22 16:46:08
+PA0118,U030,P011,Computer Science,Trie: insert and search implementation,Hard,Trie,False,394,2,9.2,2.8,2026-04-16 01:13:34
+PA0119,U006,P042,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,501,0,8.0,1.0,2025-12-12 17:28:22
+PA0120,U001,P093,Computer Science,"Generate all subsets of [1,2,3]",Medium,Recursion,True,332,1,8.8,2.0,2025-11-15 20:51:31
+PA0121,U044,P042,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,110,1,10.0,1.0,2025-12-26 03:56:22
+PA0122,U049,P092,Math,Prove that √2 is irrational,Hard,Proof,False,450,2,10.0,1.7,2026-01-05 01:47:23
+PA0123,U048,P017,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,415,2,8.1,3.1,2025-12-05 13:17:46
+PA0124,U022,P039,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,False,839,0,6.9,3.5,2026-03-13 12:37:43
+PA0125,U033,P066,Math,Prove that √2 is irrational,Hard,Proof,False,766,1,9.3,1.2,2026-01-19 20:40:00
+PA0126,U023,P079,Math,Find the derivative of sin(x²),Easy,Derivative,True,39,0,5.5,5.7,2026-03-20 19:51:52
+PA0127,U042,P028,Math,Find the derivative of sin(x²),Easy,Derivative,True,104,0,4.8,6.8,2026-03-28 09:37:30
+PA0128,U025,P066,Physics,"Ohm's law: V=12 V, R=4 Ω. Find I.",Easy,Circuit,True,78,0,4.9,6.1,2025-11-29 11:34:58
+PA0129,U050,P096,Computer Science,Design a hash function for strings,Hard,Hash Table,False,988,3,10.0,1.2,2026-03-26 02:14:37
+PA0130,U004,P018,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,True,303,0,6.9,3.6,2025-12-13 16:31:57
+PA0131,U025,P099,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,False,361,0,4.7,6.6,2026-01-26 07:30:08
+PA0132,U024,P096,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,False,184,2,7.0,5.7,2026-03-13 20:18:56
+PA0133,U030,P062,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,True,182,2,4.9,5.4,2026-04-10 08:38:02
+PA0134,U027,P027,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,True,166,0,7.2,3.0,2025-11-16 15:14:12
+PA0135,U004,P096,Computer Science,Bubble sort vs selection sort complexity,Easy,Big-O,True,135,1,4.4,5.6,2025-11-12 07:10:46
+PA0136,U019,P026,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,False,196,1,5.4,6.7,2026-01-06 16:23:04
+PA0137,U044,P009,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,True,365,1,4.8,5.3,2026-01-23 11:11:13
+PA0138,U004,P073,Computer Science,Reverse a singly linked list in-place,Medium,Linked List,True,150,1,3.5,7.6,2026-04-08 05:51:42
+PA0139,U038,P010,Computer Science,Design a hash function for strings,Hard,Hash Table,False,379,0,8.7,2.3,2026-04-11 20:36:56
+PA0140,U020,P060,Computer Science,Fibonacci with memoization (top-down DP),Medium,DP,True,258,0,3.9,8.5,2026-01-31 08:08:51
+PA0141,U047,P077,Computer Science,Design a hash function for strings,Hard,Hash Table,False,793,3,8.7,1.0,2026-01-17 15:38:49
+PA0142,U038,P024,Physics,Ball thrown at 20 m/s upward. Find max height.,Easy,Kinematics,True,136,1,5.1,5.7,2026-02-11 06:51:06
+PA0143,U032,P028,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,True,249,2,5.8,5.9,2025-12-26 11:47:49
+PA0144,U006,P095,Computer Science,Design a hash function for strings,Hard,Hash Table,False,974,1,7.3,3.0,2026-01-13 00:44:11
+PA0145,U033,P022,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,True,106,1,5.4,5.6,2025-12-21 17:02:52
+PA0146,U047,P053,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,369,0,10.0,1.8,2026-02-06 23:21:56
+PA0147,U020,P054,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,True,190,0,4.8,6.3,2025-12-29 17:30:07
+PA0148,U050,P071,Physics,Heat to raise 1 kg water by 10°C (c=4186 J/kg·K),Medium,Thermodynamics,False,351,3,7.7,4.3,2026-04-08 04:50:45
+PA0149,U039,P049,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,True,139,2,6.0,5.7,2026-04-20 06:17:51
+PA0150,U022,P013,Physics,RLC circuit: find resonant frequency,Hard,Circuit,False,493,2,8.3,3.2,2026-02-09 17:55:10
+PA0151,U038,P050,Math,Compute lim(x→0) sin(x)/x,Medium,Limit,False,313,2,9.1,2.7,2026-02-12 09:35:58
+PA0152,U013,P031,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,True,156,0,7.6,4.8,2026-03-17 14:54:30
+PA0153,U049,P026,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,True,759,1,10.0,1.9,2026-02-23 02:33:00
+PA0154,U016,P038,Math,"P(A∩B) if P(A)=0.4, P(B)=0.5, independent",Easy,Probability,True,132,2,5.7,5.2,2026-04-21 09:27:53
+PA0155,U001,P059,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,False,263,0,4.7,6.4,2026-02-12 11:08:22
+PA0156,U027,P077,Computer Science,Trie: insert and search implementation,Hard,Trie,False,461,1,4.2,6.6,2026-03-18 11:08:53
+PA0157,U038,P054,Math,"Find eigenvalues of [[2,1],[1,2]]",Medium,Eigenvalue,True,330,1,9.0,1.4,2026-01-18 22:56:17
+PA0158,U007,P082,Computer Science,Implement a min-heap insert operation,Medium,Heap,False,270,0,4.9,5.9,2026-01-14 06:19:26
+PA0159,U009,P082,Math,Prove that √2 is irrational,Hard,Proof,False,380,0,5.6,6.3,2025-12-19 13:21:29
+PA0160,U026,P091,Math,Prove that √2 is irrational,Hard,Proof,True,503,0,8.3,2.1,2026-04-01 21:08:53
+PA0161,U006,P059,Computer Science,What is time complexity of merge sort?,Easy,Big-O,False,189,0,10.0,1.9,2025-11-03 03:50:03
+PA0162,U004,P017,Computer Science,Reverse a singly linked list in-place,Medium,Linked List,False,217,0,4.6,7.6,2025-12-01 15:52:13
+PA0163,U017,P083,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,303,0,4.9,6.3,2026-01-29 22:06:43
+PA0164,U002,P024,Computer Science,Find median of a stream of integers,Hard,Heap,True,786,1,9.1,1.0,2025-11-29 15:01:34
+PA0165,U017,P033,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,False,185,1,10.0,1.0,2026-04-02 01:51:47
+PA0166,U006,P046,Computer Science,Longest common subsequence (LCS),Hard,DP,False,809,1,7.0,2.0,2026-03-22 11:52:52
+PA0167,U028,P031,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,False,99,0,9.7,1.3,2026-02-08 23:15:02
+PA0168,U005,P094,Math,"Find variance of [2,4,4,4,5,5,7,9]",Medium,Statistics,False,506,3,8.2,3.7,2026-03-08 23:10:17
+PA0169,U013,P043,Computer Science,Design a hash function for strings,Hard,Hash Table,False,596,1,4.7,6.2,2025-11-02 18:30:33
+PA0170,U008,P038,Computer Science,Implement a min-heap insert operation,Medium,Heap,True,219,2,8.7,1.0,2025-12-20 18:40:55
+PA0171,U020,P012,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,True,75,2,9.2,2.5,2026-03-19 02:53:18
+PA0172,U048,P033,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,True,282,0,5.9,3.5,2025-12-12 18:13:08
+PA0173,U033,P085,Computer Science,Design a hash function for strings,Hard,Hash Table,False,753,1,10.0,1.0,2026-04-08 04:44:31
+PA0174,U035,P032,Computer Science,Find height of a BST,Medium,Tree,False,258,2,6.1,5.5,2026-04-19 10:47:09
+PA0175,U024,P079,Math,Find the derivative of sin(x²),Easy,Derivative,True,136,0,7.7,4.4,2026-01-24 19:35:13
+PA0176,U026,P030,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,True,91,1,5.5,6.9,2026-04-05 16:14:24
+PA0177,U023,P059,Computer Science,Reverse a singly linked list in-place,Medium,Linked List,True,126,0,5.2,7.0,2025-11-16 18:14:14
+PA0178,U018,P016,Math,Prove that √2 is irrational,Hard,Proof,False,508,0,6.3,5.6,2025-11-13 11:59:09
+PA0179,U048,P040,Computer Science,Implement binary search iteratively,Easy,Binary Search,True,85,1,6.2,4.7,2026-04-03 09:14:32
+PA0180,U008,P065,Computer Science,Design a hash function for strings,Hard,Hash Table,False,949,1,6.7,4.1,2026-01-25 13:20:36
+PA0181,U012,P068,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,False,159,2,6.3,5.0,2025-11-22 09:50:10
+PA0182,U018,P033,Computer Science,Prove that P⊆NP,Hard,Complexity,False,394,0,4.2,6.6,2026-03-25 16:27:10
+PA0183,U028,P043,Computer Science,Implement a min-heap insert operation,Medium,Heap,True,284,1,5.8,3.7,2025-11-10 13:49:23
+PA0184,U015,P054,Physics,Derive Bernoulli's equation from energy conservation,Hard,Fluid Mechanics,False,741,3,10.0,1.0,2025-12-17 23:51:07
+PA0185,U002,P018,Physics,"Two charges q=1µC, r=0.1 m. Find E field.",Medium,Electric Field,True,254,1,7.0,4.6,2026-02-22 17:53:19
+PA0186,U004,P068,Computer Science,"Generate all subsets of [1,2,3]",Medium,Recursion,True,104,2,5.0,5.6,2026-03-26 12:23:44
+PA0187,U023,P084,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,False,321,1,7.9,3.9,2026-03-24 11:27:27
+PA0188,U043,P054,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,333,1,6.6,3.4,2025-12-18 17:58:39
+PA0189,U017,P011,Math,"Matrix multiply [[1,2],[3,4]]·[[5,6],[7,8]]",Easy,Matrix,True,102,0,9.1,1.5,2026-01-11 23:57:44
+PA0190,U043,P013,Computer Science,Implement a min-heap insert operation,Medium,Heap,True,368,2,6.3,5.2,2026-02-19 14:08:46
+PA0191,U020,P085,Computer Science,Prove that P⊆NP,Hard,Complexity,False,611,0,9.2,3.3,2025-12-03 01:56:26
+PA0192,U037,P079,Physics,Spring k=200 N/m stretched 0.05 m. Find PE.,Easy,Potential Energy,False,131,0,6.1,4.4,2026-01-25 10:25:52
+PA0193,U017,P019,Computer Science,Prove that P⊆NP,Hard,Complexity,False,398,0,4.5,8.3,2026-03-18 13:12:42
+PA0194,U047,P045,Math,Solve ∫ x²·ln(x) dx,Hard,Integral,False,799,1,10.0,1.0,2026-02-22 01:32:25
+PA0195,U014,P034,Physics,"Find wavelength: v=340 m/s, f=440 Hz",Easy,Wave,True,129,2,8.7,2.1,2026-01-30 01:31:28
+PA0196,U016,P052,Computer Science,Implement binary search iteratively,Easy,Binary Search,True,107,0,10.0,1.0,2026-04-08 23:10:20
+PA0197,U017,P020,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,53,1,5.2,4.5,2026-01-06 12:40:21
+PA0198,U016,P077,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,False,283,0,3.2,9.0,2026-01-11 05:01:56
+PA0199,U020,P053,Physics,"Find momentum: m=3 kg, v=4 m/s",Easy,Momentum,True,145,0,8.5,3.1,2026-04-30 04:38:06
+PA0200,U011,P076,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,168,3,10.0,1.0,2026-03-25 00:24:09
+PA0201,U029,P041,Computer Science,Implement a min-heap insert operation,Medium,Heap,False,250,1,6.4,5.2,2025-11-19 15:28:01
+PA0202,U037,P050,Physics,Ball thrown at 20 m/s upward. Find max height.,Easy,Kinematics,False,101,2,7.0,4.7,2026-02-09 14:59:39
+PA0203,U007,P074,Math,Evaluate ∫₀¹ x² dx,Easy,Integral,False,102,0,4.8,6.4,2026-01-29 08:18:07
+PA0204,U003,P047,Physics,Heat to raise 1 kg water by 10°C (c=4186 J/kg·K),Medium,Thermodynamics,False,236,1,10.0,2.0,2026-01-23 23:29:05
+PA0205,U038,P087,Math,Prove that √2 is irrational,Hard,Proof,False,581,0,7.8,2.6,2026-02-15 17:40:53
+PA0206,U023,P030,Computer Science,Longest common subsequence (LCS),Hard,DP,False,545,0,4.3,7.1,2026-02-24 09:51:17
+PA0207,U023,P052,Math,"Diagonalise A=[[4,1],[2,3]]",Hard,Eigenvalue,False,645,1,6.8,4.4,2025-12-08 15:24:22
+PA0208,U044,P003,Math,"P(A∩B) if P(A)=0.4, P(B)=0.5, independent",Easy,Probability,False,134,1,10.0,1.0,2026-02-02 03:57:20
+PA0209,U013,P020,Computer Science,Prove that P⊆NP,Hard,Complexity,False,486,0,9.4,1.0,2026-04-15 20:38:49
+PA0210,U025,P091,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,253,0,7.8,4.4,2025-12-04 19:23:38
+PA0211,U050,P010,Math,"Find eigenvalues of [[2,1],[1,2]]",Medium,Eigenvalue,False,496,2,10.0,1.0,2026-04-22 02:43:05
+PA0212,U017,P019,Computer Science,Detect cycle in a directed graph,Hard,Graph,True,531,0,4.4,6.4,2025-12-03 07:26:22
+PA0213,U022,P041,Computer Science,Trie: insert and search implementation,Hard,Trie,True,463,1,6.8,3.3,2025-12-30 10:41:15
+PA0214,U018,P049,Physics,Entropy change in isothermal expansion,Medium,Thermodynamics,False,132,1,5.8,5.6,2025-11-15 20:06:02
+PA0215,U029,P066,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,False,71,0,6.7,5.2,2025-11-04 13:14:20
+PA0216,U020,P085,Math,Find critical points of f(x)=x³-3x,Medium,Derivative,True,247,3,10.0,1.2,2026-04-01 04:30:45
+PA0217,U034,P100,Math,"Solve system: 3x+2y=12, x-y=1",Easy,Linear System,True,99,1,8.7,3.0,2025-12-18 04:09:17
+PA0218,U026,P100,Physics,Object on 30° incline. Find acceleration.,Medium,Kinematics,False,107,1,3.6,5.3,2026-04-26 07:17:45
+PA0219,U030,P070,Physics,"Find KE: m=2 kg, v=10 m/s",Easy,Energy,True,146,1,5.6,5.5,2026-03-24 18:48:21
+PA0220,U034,P050,Computer Science,Design a hash function for strings,Hard,Hash Table,False,507,1,6.5,5.7,2026-02-17 22:02:58
