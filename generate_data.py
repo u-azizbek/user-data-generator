@@ -100,43 +100,146 @@ quiz_subsections = {
     "Computer Science": ["Big-O Notation","Sorting Algorithms","Trees & Graphs","Dynamic Programming","Recursion","Hash Tables","System Design"],
 }
 
+# ---------- user profiles ----------
+# Stable per-user cognitive traits that drive realistic cross-table correlations.
+# Every generator uses a user's profile so that a "strong" student is consistently
+# better across sessions, quizzes, problems, and video engagement.
+
+def gen_user_profiles():
+    profiles = {}
+    for uid in user_ids:
+        # Overall academic ability: drives correct rates, quiz scores, hint usage
+        skill      = round(max(0.25, min(1.00, random.gauss(0.62, 0.20))), 3)
+        # Engagement: drives video completion, session length, willingness to retry
+        engagement = round(max(0.20, min(1.00, random.gauss(0.62, 0.20))), 3)
+        # One subject where this student has an edge (+score, +correct rate)
+        preferred_subject = random.choice(subjects)
+        # Consistency: high = low variance; low = "hot/cold" student
+        consistency = round(random.uniform(0.35, 1.00), 3)
+        profiles[uid] = {
+            "skill":             skill,
+            "engagement":        engagement,
+            "preferred_subject": preferred_subject,
+            "consistency":       consistency,
+        }
+    return profiles
+
+user_profiles = gen_user_profiles()
+
+# ---------- fatigue & attention helpers ----------
+
+def time_of_day_label(hour):
+    if 5 <= hour < 11:
+        return "Morning"
+    elif 11 <= hour < 17:
+        return "Afternoon"
+    elif 17 <= hour < 22:
+        return "Evening"
+    else:
+        return "Night"
+
+def compute_fatigue(hour, duration_minutes):
+    """
+    Returns fatigue_score 1–10.
+    Neuroscience basis: alertness follows a ~24 h circadian cycle with a strong dip
+    between 2–4 AM and a smaller post-lunch dip (14:00–16:00).
+    Each 30 min of continuous study adds ~1 extra fatigue point.
+    """
+    if 5 <= hour < 9:
+        tod = random.uniform(1.0, 3.0)    # fresh morning start
+    elif 9 <= hour < 14:
+        tod = random.uniform(2.0, 5.0)    # productive mid-morning window
+    elif 14 <= hour < 16:
+        tod = random.uniform(4.0, 6.5)    # post-lunch circadian dip
+    elif 16 <= hour < 20:
+        tod = random.uniform(2.5, 5.5)    # afternoon second wind
+    elif 20 <= hour < 23:
+        tod = random.uniform(4.0, 7.0)    # evening wind-down
+    else:
+        tod = random.uniform(6.0, 9.5)    # late night / very early morning
+    raw = tod + duration_minutes / 30.0 + random.gauss(0, 0.5)
+    return round(max(1.0, min(10.0, raw)), 1)
+
+def compute_attention(fatigue_score, skill):
+    """
+    Attention span 1–10.
+    Strongly inversely correlated with fatigue (key neuroscience correlation).
+    Higher-skill students sustain attention better under the same fatigue load.
+    """
+    base      = 11.0 - fatigue_score           # direct inverse of fatigue
+    skill_adj = (skill - 0.62) * 2.2           # ±~0.8 across skill range 0.25–1.0
+    return round(max(1.0, min(10.0, base + skill_adj + random.gauss(0, 0.8))), 1)
+
 # ---------- generators ----------
 
 def gen_sessions(n=220):
     rows = []
     for i in range(n):
+        uid = random.choice(user_ids)
+        p   = user_profiles[uid]
         login = rand_dt()
-        duration = random.randint(5, 240)
+        hour  = login.hour
+        # Engaged users study longer on average
+        duration = max(5, min(240, int(random.gauss(30 + p["engagement"] * 90, 35))))
         logout = login + timedelta(minutes=duration)
-        uninterrupted = random.randint(max(0, duration - random.randint(0, 60)), duration)
+
+        fatigue   = compute_fatigue(hour, duration)
+        attention = compute_attention(fatigue, p["skill"])
+
+        # KEY CORRELATION: high fatigue → shorter uninterrupted spans (more breaks)
+        raw_unint   = duration * (attention / 10.0) * random.gauss(1.0, 0.10)
+        uninterrupted = max(1, min(duration, int(raw_unint)))
+
         rows.append([
             f"S{i+1:04d}",
-            random.choice(user_ids),
+            uid,
             login.strftime("%Y-%m-%d %H:%M:%S"),
             logout.strftime("%Y-%m-%d %H:%M:%S"),
+            duration,
             uninterrupted,
+            time_of_day_label(hour),
+            fatigue,
+            attention,
         ])
     return rows
 
 def gen_video_progress(n=220):
     rows = []
     for i in range(n):
+        uid = random.choice(user_ids)
+        p   = user_profiles[uid]
         subject = random.choice(subjects)
         course_slug, lesson_slugs = random.choice(courses[subject])
         lesson_slug = random.choice(lesson_slugs)
         video_len = random.randint(300, 3600)
-        # 60% chance user watched most of it
-        if random.random() < 0.6:
-            watched = random.randint(int(video_len * 0.8), video_len)
+
+        # Engagement + subject affinity drive how far the user watches
+        completion_prob = 0.30 + p["engagement"] * 0.58
+        if subject == p["preferred_subject"]:
+            completion_prob = min(0.97, completion_prob + 0.10)
+
+        if random.random() < completion_prob:
+            watched = random.randint(int(video_len * 0.85), video_len)
         else:
-            watched = random.randint(0, int(video_len * 0.8))
+            # Low-engagement users drop off proportionally earlier
+            max_frac = 0.20 + p["engagement"] * 0.55
+            watched = random.randint(0, int(video_len * max_frac))
+
         is_completed = watched >= video_len * 0.9
         rating = None
         if is_completed and random.random() < 0.7:
-            rating = random.choices([1,2,3,4,5], weights=[2,5,15,40,38])[0]
+            # More engaged users skew ratings higher
+            if p["engagement"] >= 0.72:
+                weights = [1, 2, 10, 37, 50]
+            elif p["engagement"] <= 0.40:
+                weights = [5, 13, 28, 37, 17]
+            else:
+                weights = [2, 5, 15, 40, 38]
+            rating = random.choices([1, 2, 3, 4, 5], weights=weights)[0]
+
         rows.append([
             f"VP{i+1:04d}",
-            random.choice(user_ids),
+            uid,
             random.choice(lesson_ids),
             subject,
             course_slug,
@@ -149,20 +252,45 @@ def gen_video_progress(n=220):
     return rows
 
 def gen_problem_attempts(n=220):
-    correct_rate = {"Easy": 0.78, "Medium": 0.55, "Hard": 0.30}
+    base_correct = {"Easy": 0.78, "Medium": 0.55, "Hard": 0.30}
+    base_time    = {"Easy": 120,  "Medium": 300,  "Hard": 600}
     rows = []
     for i in range(n):
+        uid = random.choice(user_ids)
+        p   = user_profiles[uid]
         subject = random.choice(subjects)
         title, topic_tag, difficulty = random.choice(problems_data[subject])
-        is_correct = random.random() < correct_rate[difficulty]
-        # harder problems take longer
-        base = {"Easy": 120, "Medium": 300, "Hard": 600}[difficulty]
-        time_taken = int(random.gauss(base, base * 0.4))
-        time_taken = max(15, min(time_taken, 3600))
-        hints = random.choices([0,1,2,3], weights=[55,25,13,7])[0]
+        ts   = rand_dt()
+        hour = ts.hour
+        # Estimate how far into a study session this attempt falls
+        est_elapsed = random.randint(5, 120)
+        fatigue   = compute_fatigue(hour, est_elapsed)
+        attention = compute_attention(fatigue, p["skill"])
+
+        # KEY CORRELATIONS:
+        #   skill ↑  → correct rate ↑
+        #   fatigue ↑ → correct rate ↓  (mental resource depletion)
+        #   preferred subject → small boost
+        rate  = base_correct[difficulty]
+        rate += (p["skill"] - 0.62) * 0.45          # ±~0.17
+        rate += 0.08 if subject == p["preferred_subject"] else 0.0
+        rate -= (fatigue - 5) * 0.025               # fatigue > 5 starts hurting
+        rate  = max(0.04, min(0.97, rate))
+        is_correct = random.random() < rate
+
+        # Time: low skill + high fatigue → slower (confusion, re-reading)
+        t_base  = base_time[difficulty]
+        t_scale = (1.5 - p["skill"]) * (1.0 + (fatigue - 5) * 0.05)
+        time_taken = int(random.gauss(t_base * t_scale, t_base * 0.30))
+        time_taken = max(15, min(3600, time_taken))
+
+        # Hints: low skill + high fatigue → more hints requested
+        hint_p = max(0.03, min(0.85, 0.45 - p["skill"] * 0.35 + (fatigue - 5) * 0.03))
+        hints  = sum(1 for _ in range(3) if random.random() < hint_p)
+
         rows.append([
             f"PA{i+1:04d}",
-            random.choice(user_ids),
+            uid,
             random.choice(problem_ids),
             subject,
             title,
@@ -171,26 +299,55 @@ def gen_problem_attempts(n=220):
             is_correct,
             time_taken,
             hints,
-            rand_dt().strftime("%Y-%m-%d %H:%M:%S"),
+            fatigue,
+            attention,
+            ts.strftime("%Y-%m-%d %H:%M:%S"),
         ])
     return rows
 
 def gen_quiz_results(n=220):
     rows = []
     for i in range(n):
-        subject = random.choice(subjects)
+        uid = random.choice(user_ids)
+        p   = user_profiles[uid]
+        subject    = random.choice(subjects)
         subsection = random.choice(quiz_subsections[subject])
-        score = round(min(100.0, max(0.0, random.gauss(67, 18))), 1)
-        time_taken = random.randint(120, 3600)
+        ts   = rand_dt()
+        hour = ts.hour
+        est_elapsed = random.randint(10, 180)
+        fatigue   = compute_fatigue(hour, est_elapsed)
+        attention = compute_attention(fatigue, p["skill"])
+
+        # KEY CORRELATIONS:
+        #   skill ↑     → score ↑
+        #   fatigue ↑   → score ↓   (core neuroscience correlation)
+        #   attention ↑ → score ↑   (mediates the fatigue → score link)
+        #   preferred subject → score boost
+        #   consistency → controls score variance (reliable vs. hot/cold)
+        score  = 67.0
+        score += (p["skill"] - 0.62) * 44           # ±~17 pts across full skill range
+        score += 9.0 if subject == p["preferred_subject"] else -4.0
+        score -= (fatigue - 5) * 2.2                # fatigue 10 → −11 pts; fatigue 1 → +8.8 pts
+        score += (attention - 5) * 1.5              # attention 10 → +7.5 pts
+        score += random.gauss(0, (1.1 - p["consistency"]) * 12)
+        score  = round(max(0.0, min(100.0, score)), 1)
+
+        # Time: lower skill + higher fatigue → slower completion
+        t_scale    = (1.5 - p["skill"]) * (1.0 + (fatigue - 5) * 0.04)
+        time_taken = int(random.gauss(900 * t_scale, 220))
+        time_taken = max(120, min(3600, time_taken))
+
         rows.append([
             f"QR{i+1:04d}",
-            random.choice(user_ids),
+            uid,
             random.choice(quiz_ids),
             subject,
             subsection,
             score,
             time_taken,
-            rand_dt().strftime("%Y-%m-%d %H:%M:%S"),
+            fatigue,
+            attention,
+            ts.strftime("%Y-%m-%d %H:%M:%S"),
         ])
     return rows
 
@@ -207,7 +364,9 @@ base = Path(__file__).parent / "data"
 base.mkdir(exist_ok=True)
 
 write_csv(base / "user_sessions.csv",
-    ["session_id","user_id","login_timestamp","logout_timestamp","uninterrupted_minutes"],
+    ["session_id","user_id","login_timestamp","logout_timestamp",
+     "session_duration_minutes","uninterrupted_minutes","time_of_day",
+     "fatigue_score","attention_span_score"],
     gen_sessions())
 
 write_csv(base / "video_progress.csv",
@@ -217,12 +376,14 @@ write_csv(base / "video_progress.csv",
 
 write_csv(base / "problem_attempts.csv",
     ["attempt_id","user_id","problem_id","subject_category","title","difficulty",
-     "topic_tag","is_correct","time_taken_seconds","hints_used","timestamp"],
+     "topic_tag","is_correct","time_taken_seconds","hints_used",
+     "fatigue_score","attention_span_score","timestamp"],
     gen_problem_attempts())
 
 write_csv(base / "quiz_results.csv",
     ["result_id","user_id","quiz_id","subject_category","subsection",
-     "score_percentage","time_taken_seconds","completed_at"],
+     "score_percentage","time_taken_seconds","fatigue_score","attention_span_score",
+     "completed_at"],
     gen_quiz_results())
 
 print("\nDone.")
