@@ -1,221 +1,221 @@
 progress_id,user_id,lesson_id,subject_category,course_slug,lesson_slug,seconds_watched,is_completed,user_rating,timestamp,playback_speed_avg,rewind_count,pause_count,skip_forward_count,tab_out_count,video_duration_seconds,suggested_problems_solved
-VP0001,U039,L038,Physics,electromagnetism,electric-fields,2692,True,,2026-04-04 23:12:24,1.5,7,19,2,3,2897,1
-VP0002,U016,L014,Computer Science,algorithms-101,big-o-notation,1369,True,5,2025-11-26 17:31:38,2.0,5,5,1,2,1397,0
-VP0003,U006,L011,Math,linear-algebra,dot-product,2401,True,4,2026-03-21 18:01:01,1.0,16,13,0,0,2581,1
-VP0004,U036,L054,Math,probability-stats,regression,86,False,,2025-12-29 04:56:48,1.0,0,0,1,3,994,0
-VP0005,U031,L043,Math,linear-algebra,eigenvalues,507,False,,2026-04-13 10:12:09,1.5,2,2,0,4,1310,0
-VP0006,U040,L041,Physics,electromagnetism,faradays-law,1630,True,4,2025-12-27 14:14:48,1.5,10,4,2,4,1671,2
-VP0007,U048,L076,Computer Science,web-development,api-design,667,False,,2026-02-14 22:48:57,1.0,5,0,3,4,2658,0
-VP0008,U012,L033,Computer Science,web-development,html-basics,3148,True,4,2026-03-08 21:35:30,1.5,9,0,6,3,3278,4
-VP0009,U010,L069,Computer Science,data-structures,hash-tables,587,True,,2026-02-24 07:24:05,1.5,1,2,3,1,602,2
-VP0010,U041,L043,Math,calculus-101,derivatives-basics,340,False,,2026-04-04 14:42:20,1.5,6,1,1,2,2993,0
-VP0011,U028,L045,Math,calculus-101,limits-intro,1346,True,4,2025-11-05 18:28:12,1.5,4,2,2,2,1359,0
-VP0012,U031,L058,Math,linear-algebra,dot-product,646,True,,2026-01-01 22:13:33,1.0,3,3,2,3,651,4
-VP0013,U005,L060,Physics,classical-mechanics,rotational-motion,698,True,4,2025-12-16 00:31:30,1.5,3,0,3,2,771,1
-VP0014,U026,L028,Computer Science,algorithms-101,sorting-basics,810,False,,2025-12-10 23:01:30,1.0,4,1,2,3,2923,0
-VP0015,U018,L068,Computer Science,algorithms-101,dynamic-programming,274,False,,2026-03-05 02:27:42,1.0,1,1,0,3,716,0
-VP0016,U021,L041,Computer Science,data-structures,graphs,1798,True,5,2025-11-23 21:16:30,1.5,7,4,1,1,1907,0
-VP0017,U016,L069,Physics,classical-mechanics,kinematics-1d,523,False,,2026-03-15 15:37:53,1.0,2,0,0,3,1829,0
-VP0018,U042,L018,Math,probability-stats,conditional-probability,2054,False,,2025-12-08 21:21:52,1.5,5,6,4,2,2305,0
-VP0019,U025,L069,Computer Science,web-development,authentication,2228,True,3,2025-12-27 01:18:04,1.0,14,0,9,3,2327,0
-VP0020,U011,L070,Physics,thermodynamics,carnot-cycle,1125,False,,2026-04-09 17:38:41,1.0,7,1,1,3,3464,0
-VP0021,U049,L012,Math,probability-stats,hypothesis-testing,2373,True,,2026-01-25 06:12:50,1.0,14,0,2,6,2537,2
-VP0022,U008,L022,Math,calculus-101,taylors-series,2664,True,5,2026-01-02 20:20:06,1.5,11,12,4,0,2708,2
-VP0023,U046,L008,Physics,electromagnetism,circuits,526,False,,2025-12-24 20:25:16,2.0,1,1,3,1,1395,0
-VP0024,U042,L012,Math,probability-stats,conditional-probability,1205,True,3,2026-01-18 05:25:14,2.0,1,0,1,2,1322,4
-VP0025,U033,L069,Computer Science,data-structures,heaps,1788,True,,2026-01-17 05:29:25,1.0,14,3,5,1,1811,2
-VP0026,U014,L059,Physics,classical-mechanics,energy-work,1261,True,5,2025-11-04 03:52:35,1.5,4,1,0,2,1399,1
-VP0027,U008,L036,Math,linear-algebra,dot-product,109,False,,2025-11-19 02:59:45,1.0,0,0,0,0,302,0
-VP0028,U042,L012,Physics,electromagnetism,electric-fields,1633,False,,2026-03-17 15:28:14,1.0,5,0,3,1,1823,0
-VP0029,U007,L055,Math,calculus-101,integration-by-parts,554,False,,2026-03-15 18:25:08,1.5,2,2,0,1,619,0
-VP0030,U009,L018,Physics,classical-mechanics,kinematics-1d,1640,False,,2026-03-05 13:57:41,1.0,8,4,4,4,1869,0
-VP0031,U044,L012,Math,calculus-101,definite-integrals,2547,True,,2026-04-24 02:25:33,1.0,16,9,2,0,2607,2
-VP0032,U007,L004,Math,calculus-101,definite-integrals,3289,True,5,2026-04-14 15:27:48,1.0,20,5,4,2,3290,3
-VP0033,U043,L068,Physics,classical-mechanics,momentum,2749,True,4,2026-04-22 13:45:23,1.0,16,0,5,2,2785,1
-VP0034,U001,L010,Physics,electromagnetism,coulombs-law,582,False,,2025-11-04 05:46:41,1.5,2,1,0,3,1884,0
-VP0035,U038,L055,Math,calculus-101,chain-rule,1020,False,,2026-03-17 06:40:28,2.0,2,4,2,0,1183,0
-VP0036,U026,L009,Math,probability-stats,regression,2268,True,5,2025-12-31 05:29:40,1.0,15,9,7,3,2502,3
-VP0037,U045,L002,Physics,thermodynamics,first-law,511,True,,2025-12-02 19:30:55,1.0,3,1,0,0,537,1
-VP0038,U032,L004,Physics,thermodynamics,ideal-gas,530,False,,2026-01-05 01:15:52,1.0,5,3,1,5,3507,0
-VP0039,U028,L022,Physics,thermodynamics,heat-transfer,590,False,,2026-01-11 09:32:57,1.5,1,2,3,2,1377,0
-VP0040,U011,L047,Physics,classical-mechanics,momentum,467,False,,2026-01-14 08:48:49,1.5,6,1,2,3,3061,0
-VP0041,U010,L010,Math,calculus-101,definite-integrals,1516,False,,2026-02-19 23:33:02,1.5,6,6,4,3,3589,0
-VP0042,U024,L048,Math,probability-stats,bayes-theorem,503,True,4,2025-12-09 23:11:43,2.0,1,2,0,0,515,3
-VP0043,U019,L004,Computer Science,data-structures,heaps,2610,True,5,2025-12-16 05:50:53,1.5,6,7,5,4,2850,2
-VP0044,U035,L031,Physics,thermodynamics,carnot-cycle,0,False,,2026-01-21 12:29:01,1.5,0,0,0,2,339,0
-VP0045,U032,L011,Math,calculus-101,taylors-series,1288,False,,2026-02-21 18:35:14,2.0,1,3,1,4,1446,0
-VP0046,U007,L051,Computer Science,algorithms-101,greedy-algorithms,1658,False,,2026-03-17 01:37:04,1.0,11,4,2,3,1915,0
-VP0047,U048,L041,Physics,electromagnetism,faradays-law,1252,False,,2026-01-18 22:29:08,1.0,9,2,2,3,1413,0
-VP0048,U008,L042,Computer Science,data-structures,linked-lists,1963,True,,2025-11-29 19:14:20,2.0,8,10,2,3,2151,1
-VP0049,U006,L018,Computer Science,algorithms-101,binary-search,1787,True,3,2025-11-24 14:00:47,1.0,11,7,0,2,1923,1
-VP0050,U001,L010,Math,calculus-101,derivatives-basics,381,False,,2025-11-05 05:35:46,1.5,2,1,0,1,1111,0
-VP0051,U005,L055,Math,probability-stats,hypothesis-testing,810,True,4,2025-12-04 13:20:23,2.0,2,2,0,2,827,2
-VP0052,U023,L071,Math,calculus-101,chain-rule,1267,False,,2026-02-02 00:26:45,1.0,6,1,3,3,1446,0
-VP0053,U004,L045,Math,linear-algebra,dot-product,795,True,,2026-04-27 05:22:59,1.5,4,0,2,1,862,3
-VP0054,U037,L030,Computer Science,data-structures,hash-tables,1276,True,,2025-12-01 23:54:19,1.5,8,6,0,3,1407,2
-VP0055,U007,L023,Math,probability-stats,conditional-probability,1384,True,,2025-12-05 04:41:13,2.0,8,7,2,3,1391,2
-VP0056,U016,L005,Computer Science,data-structures,heaps,2985,True,3,2025-11-18 12:37:47,1.0,17,0,2,2,3157,2
-VP0057,U004,L042,Math,probability-stats,conditional-probability,323,False,,2025-11-12 13:33:03,1.0,0,0,0,1,381,0
-VP0058,U002,L076,Math,probability-stats,bayes-theorem,433,False,,2025-11-20 14:50:38,1.5,1,1,0,0,880,0
-VP0059,U022,L029,Physics,electromagnetism,coulombs-law,914,True,,2026-03-10 05:36:08,1.5,6,2,2,3,945,3
-VP0060,U038,L073,Math,linear-algebra,eigenvalues,260,False,,2025-11-07 06:54:52,1.0,4,1,0,2,3306,0
-VP0061,U012,L022,Computer Science,data-structures,graphs,1049,False,,2026-03-04 12:50:42,2.0,3,6,2,4,1204,0
-VP0062,U006,L001,Computer Science,web-development,authentication,1829,False,,2025-11-10 08:23:00,1.0,12,13,0,3,3287,0
-VP0063,U025,L074,Physics,thermodynamics,entropy,252,False,,2026-03-07 09:44:16,2.0,0,1,2,1,981,0
-VP0064,U049,L049,Computer Science,algorithms-101,sorting-basics,1842,False,,2025-12-02 05:52:09,1.0,9,14,3,2,2148,0
-VP0065,U047,L025,Math,probability-stats,basic-probability,1588,True,3,2026-01-19 11:22:56,1.5,8,1,2,1,1684,1
-VP0066,U045,L077,Computer Science,web-development,authentication,2279,True,4,2026-02-02 06:29:33,1.0,15,8,4,2,2512,1
-VP0067,U013,L034,Math,calculus-101,derivatives-basics,41,False,,2025-11-18 16:43:43,1.5,2,0,0,3,999,0
-VP0068,U042,L073,Computer Science,data-structures,linked-lists,378,False,,2025-11-12 23:15:37,1.0,3,1,1,4,1819,0
-VP0069,U010,L067,Computer Science,web-development,html-basics,277,False,,2026-01-21 06:58:00,1.0,2,0,1,2,651,0
-VP0070,U035,L074,Computer Science,data-structures,graphs,1095,False,,2026-03-12 13:32:29,1.0,8,2,2,1,1265,0
-VP0071,U040,L056,Math,calculus-101,integration-by-parts,171,False,,2025-12-10 05:00:43,2.0,1,0,0,3,1008,0
-VP0072,U041,L002,Math,probability-stats,distributions,68,False,,2026-04-02 17:35:29,1.0,0,0,1,2,1609,0
-VP0073,U045,L069,Computer Science,web-development,databases,3399,True,,2026-04-20 21:43:48,1.0,18,4,8,3,3501,1
-VP0074,U023,L043,Physics,electromagnetism,faradays-law,2845,True,,2026-03-15 02:01:38,1.5,12,10,7,2,2982,2
-VP0075,U016,L013,Math,probability-stats,hypothesis-testing,20,False,,2026-04-18 17:22:03,1.0,1,0,1,0,1400,0
-VP0076,U015,L053,Math,linear-algebra,determinants,328,False,,2026-03-24 21:03:10,1.0,0,1,1,3,2114,0
-VP0077,U032,L004,Computer Science,data-structures,arrays-lists,134,False,,2025-12-04 17:40:29,1.5,0,0,1,1,2410,0
-VP0078,U013,L058,Math,calculus-101,derivatives-basics,415,True,4,2025-12-05 11:35:59,2.0,0,2,0,2,435,1
-VP0079,U031,L029,Computer Science,web-development,javascript-intro,1585,True,,2026-03-12 14:17:19,2.0,2,1,3,3,1710,2
-VP0080,U014,L036,Physics,thermodynamics,entropy,2390,True,,2026-01-22 07:04:58,1.0,17,1,2,3,2402,2
-VP0081,U025,L048,Physics,electromagnetism,magnetic-fields,346,False,,2026-02-18 00:34:47,1.5,0,0,5,3,1193,0
-VP0082,U042,L039,Computer Science,web-development,javascript-intro,493,False,,2025-12-07 13:49:17,1.0,4,1,1,1,1522,0
-VP0083,U010,L038,Computer Science,algorithms-101,big-o-notation,1658,False,,2025-12-21 09:00:50,1.5,5,0,3,2,3599,0
-VP0084,U027,L022,Physics,electromagnetism,capacitors,401,True,4,2026-04-13 05:39:36,1.5,1,0,0,1,444,0
-VP0085,U043,L040,Computer Science,algorithms-101,binary-search,688,True,4,2026-01-21 15:32:39,1.0,5,0,2,3,699,1
-VP0086,U022,L025,Physics,electromagnetism,circuits,1308,False,,2026-02-06 04:23:37,1.5,7,2,2,1,1504,0
-VP0087,U008,L024,Computer Science,data-structures,graphs,1515,True,4,2026-04-01 06:07:44,2.0,5,6,1,2,1522,0
-VP0088,U006,L063,Physics,electromagnetism,capacitors,884,False,,2026-04-02 11:20:52,1.0,5,7,1,2,1024,0
-VP0089,U049,L068,Math,calculus-101,definite-integrals,1970,True,,2025-12-08 00:09:06,1.0,11,6,1,2,2076,0
-VP0090,U002,L067,Computer Science,algorithms-101,greedy-algorithms,3163,True,4,2026-02-24 19:17:06,2.0,6,12,4,3,3304,1
-VP0091,U034,L065,Physics,electromagnetism,capacitors,845,True,2,2025-12-03 19:31:33,1.5,4,7,1,0,848,2
-VP0092,U008,L057,Physics,thermodynamics,carnot-cycle,3273,True,3,2026-01-13 20:06:39,2.0,9,4,2,3,3544,0
-VP0093,U008,L066,Computer Science,data-structures,hash-tables,3052,True,5,2026-03-20 13:41:36,1.5,16,10,5,3,3174,1
-VP0094,U040,L027,Math,linear-algebra,vectors-intro,3189,True,4,2026-03-14 15:15:45,2.0,12,0,4,3,3514,1
-VP0095,U031,L013,Physics,classical-mechanics,newtons-laws,28,False,,2026-04-25 16:34:39,2.0,0,0,1,2,352,0
-VP0096,U017,L041,Computer Science,algorithms-101,recursion,1297,False,,2026-01-22 17:16:53,1.0,9,4,0,3,1512,0
-VP0097,U048,L012,Math,calculus-101,limits-intro,165,False,,2026-01-12 08:32:42,1.0,0,1,0,0,339,0
-VP0098,U022,L022,Math,calculus-101,integration-by-parts,556,False,,2025-11-22 22:52:54,2.0,1,1,0,3,1939,0
-VP0099,U009,L053,Computer Science,web-development,html-basics,932,True,4,2026-01-25 13:45:15,2.0,1,0,2,3,952,2
-VP0100,U003,L080,Math,linear-algebra,determinants,1570,True,5,2025-11-19 11:51:37,2.0,3,1,0,0,1587,3
-VP0101,U028,L064,Computer Science,web-development,css-layouts,2260,True,4,2026-04-18 19:46:13,1.5,10,1,5,2,2273,1
-VP0102,U011,L041,Math,linear-algebra,eigenvalues,1164,True,4,2025-11-24 01:12:50,1.0,9,5,3,3,1286,2
-VP0103,U032,L039,Computer Science,web-development,html-basics,616,False,,2026-04-22 20:13:02,1.5,3,2,0,1,720,0
-VP0104,U033,L047,Computer Science,algorithms-101,greedy-algorithms,2766,True,,2026-03-20 00:23:55,1.0,19,6,7,4,3050,2
-VP0105,U029,L053,Math,calculus-101,taylors-series,1116,True,4,2025-11-21 18:28:36,2.0,2,1,2,2,1208,2
-VP0106,U017,L006,Computer Science,algorithms-101,sorting-basics,201,False,,2026-04-29 22:23:33,1.5,1,0,0,3,794,0
-VP0107,U041,L007,Computer Science,web-development,html-basics,936,False,,2026-02-16 10:13:17,2.0,3,1,2,4,3462,0
-VP0108,U028,L078,Computer Science,data-structures,graphs,362,False,,2026-04-21 09:39:39,2.0,2,2,2,4,3499,0
-VP0109,U021,L053,Computer Science,data-structures,hash-tables,508,False,,2026-02-25 23:58:02,1.5,6,0,0,3,2794,0
-VP0110,U045,L017,Computer Science,web-development,javascript-intro,2857,True,,2026-03-18 22:41:14,1.5,14,3,7,4,3173,2
-VP0111,U042,L002,Math,probability-stats,regression,3034,True,5,2026-02-10 12:05:53,1.0,12,13,5,2,3143,5
-VP0112,U007,L008,Math,linear-algebra,matrix-operations,464,False,,2026-03-15 02:24:18,1.0,4,0,0,0,517,0
-VP0113,U019,L050,Math,probability-stats,basic-probability,104,False,,2025-12-17 03:16:30,2.0,0,0,0,3,1769,0
-VP0114,U033,L057,Computer Science,data-structures,heaps,2762,True,5,2026-04-11 04:00:12,1.0,22,1,8,4,3021,2
-VP0115,U015,L066,Computer Science,web-development,authentication,2810,True,2,2025-11-24 04:13:44,1.5,11,0,4,3,2952,1
-VP0116,U025,L020,Math,linear-algebra,eigenvalues,2274,False,,2026-04-30 07:43:16,1.5,9,6,9,3,2579,0
-VP0117,U021,L029,Computer Science,algorithms-101,greedy-algorithms,616,False,,2025-12-06 16:53:31,1.5,2,1,1,2,2821,0
-VP0118,U034,L002,Math,probability-stats,conditional-probability,1908,True,,2025-11-23 06:38:34,1.0,9,11,0,2,2003,4
-VP0119,U043,L067,Physics,electromagnetism,coulombs-law,2808,True,4,2026-04-09 15:18:21,1.0,21,11,3,4,2930,2
-VP0120,U050,L009,Physics,thermodynamics,ideal-gas,1957,True,1,2025-12-11 22:18:46,1.5,12,11,2,1,2125,0
-VP0121,U043,L010,Computer Science,algorithms-101,greedy-algorithms,421,False,,2026-03-26 00:45:48,1.5,1,0,1,1,2037,0
-VP0122,U044,L034,Math,calculus-101,integration-by-parts,2794,False,,2026-01-19 03:42:23,1.0,18,10,4,4,3236,0
-VP0123,U025,L046,Physics,thermodynamics,entropy,1961,True,,2026-04-30 05:00:57,1.5,6,1,6,2,2073,3
-VP0124,U033,L069,Math,linear-algebra,determinants,1375,False,,2025-12-13 16:38:54,2.0,3,3,1,1,1534,0
-VP0125,U009,L002,Computer Science,data-structures,graphs,147,False,,2026-02-16 11:36:34,1.5,3,0,1,1,1508,0
-VP0126,U036,L045,Math,calculus-101,limits-intro,100,False,,2025-12-12 02:45:56,1.5,1,0,0,0,320,0
-VP0127,U027,L060,Computer Science,web-development,css-layouts,879,True,,2026-03-06 04:24:03,1.0,7,5,3,0,959,0
-VP0128,U036,L013,Math,linear-algebra,determinants,513,False,,2025-12-26 08:50:07,2.0,0,1,3,3,575,0
-VP0129,U040,L029,Math,calculus-101,chain-rule,2261,True,4,2026-03-19 07:05:18,2.0,8,3,0,2,2290,0
-VP0130,U048,L018,Computer Science,data-structures,trees-intro,1675,True,,2026-04-23 01:44:42,2.0,4,4,4,3,1772,1
-VP0131,U035,L076,Math,linear-algebra,determinants,2474,False,,2025-12-12 07:32:11,2.0,10,0,3,2,2866,0
-VP0132,U003,L060,Computer Science,data-structures,graphs,2209,False,,2026-02-06 07:24:11,1.5,7,14,3,1,2510,0
-VP0133,U033,L019,Math,linear-algebra,eigenvalues,2124,True,4,2026-03-23 21:38:05,2.0,8,0,3,4,2356,1
-VP0134,U047,L047,Physics,electromagnetism,electric-fields,237,False,,2026-01-15 08:38:41,1.0,1,1,1,4,1196,0
-VP0135,U031,L010,Physics,classical-mechanics,newtons-laws,2872,True,4,2026-02-09 07:49:25,2.0,4,3,7,2,2956,4
-VP0136,U017,L020,Physics,classical-mechanics,momentum,1843,True,4,2025-12-07 07:02:36,1.5,7,6,3,2,1962,1
-VP0137,U011,L021,Physics,thermodynamics,carnot-cycle,212,False,,2026-03-06 16:26:47,1.5,1,0,0,2,784,0
-VP0138,U027,L024,Math,calculus-101,limits-intro,719,False,,2026-02-09 07:43:12,1.0,2,1,2,2,823,0
-VP0139,U026,L029,Computer Science,web-development,authentication,72,False,,2026-04-11 05:46:29,2.0,1,0,0,2,376,0
-VP0140,U027,L065,Computer Science,algorithms-101,dynamic-programming,3196,True,3,2026-03-13 21:23:06,1.0,20,0,8,3,3443,1
-VP0141,U027,L056,Math,probability-stats,basic-probability,1025,True,,2026-02-10 08:54:08,1.0,7,0,3,3,1026,1
-VP0142,U027,L030,Physics,classical-mechanics,rotational-motion,2345,True,4,2026-04-26 17:18:18,2.0,6,9,2,1,2470,1
-VP0143,U006,L027,Physics,thermodynamics,ideal-gas,1679,False,,2026-03-14 13:13:31,1.5,8,3,0,1,1973,0
-VP0144,U021,L062,Physics,electromagnetism,electric-fields,857,True,5,2025-12-05 16:53:37,1.0,4,1,0,0,933,1
-VP0145,U024,L030,Computer Science,web-development,api-design,591,False,,2026-01-26 17:16:58,1.5,1,1,1,0,1339,0
-VP0146,U045,L061,Math,calculus-101,derivatives-basics,2197,True,,2026-04-29 18:49:43,2.0,4,1,6,3,2382,1
-VP0147,U039,L037,Physics,classical-mechanics,newtons-laws,1190,False,,2026-03-19 04:19:24,2.0,1,0,0,2,1377,0
-VP0148,U039,L066,Math,calculus-101,taylors-series,2078,False,,2026-02-09 03:51:56,2.0,5,5,3,3,2324,0
-VP0149,U045,L051,Math,probability-stats,conditional-probability,2723,False,,2026-01-18 17:32:18,2.0,7,6,6,4,3060,0
-VP0150,U038,L036,Math,probability-stats,basic-probability,184,False,,2025-12-14 22:36:48,1.5,1,0,0,2,3318,0
-VP0151,U039,L066,Math,linear-algebra,dot-product,2344,False,,2025-12-21 00:56:17,1.5,8,9,2,4,2654,0
-VP0152,U035,L076,Computer Science,data-structures,heaps,576,False,,2026-04-17 09:19:10,1.5,3,2,2,1,2113,0
-VP0153,U002,L002,Physics,classical-mechanics,kinematics-2d,517,False,,2026-03-17 02:03:04,1.5,2,2,2,1,576,0
-VP0154,U017,L031,Math,linear-algebra,vectors-intro,1818,True,3,2026-04-19 11:16:29,1.0,13,3,2,4,1934,1
-VP0155,U017,L079,Math,calculus-101,derivatives-basics,364,False,,2025-11-02 06:52:06,1.0,5,2,0,0,1322,0
-VP0156,U049,L074,Computer Science,algorithms-101,recursion,1799,True,4,2025-11-25 21:40:10,2.0,5,2,3,2,1820,3
-VP0157,U004,L049,Computer Science,data-structures,hash-tables,2313,True,5,2026-02-21 19:41:40,1.5,9,6,3,1,2514,3
-VP0158,U007,L027,Physics,electromagnetism,circuits,1225,False,,2026-01-21 09:06:52,1.5,3,4,1,2,1363,0
-VP0159,U045,L026,Physics,electromagnetism,faradays-law,1374,True,,2025-11-29 07:40:51,1.0,7,2,4,2,1445,2
-VP0160,U048,L039,Math,linear-algebra,vectors-intro,903,False,,2025-12-19 17:37:25,2.0,4,0,2,0,1023,0
-VP0161,U036,L034,Computer Science,algorithms-101,recursion,30,False,,2026-01-10 02:12:17,1.5,0,0,2,3,705,0
-VP0162,U024,L069,Computer Science,web-development,javascript-intro,1514,False,,2025-12-04 21:24:35,1.5,4,3,0,0,1709,0
-VP0163,U050,L054,Physics,electromagnetism,magnetic-fields,2994,True,5,2026-03-03 13:56:50,1.5,18,7,2,3,3057,1
-VP0164,U040,L057,Computer Science,data-structures,arrays-lists,559,False,,2026-04-01 15:36:10,1.0,3,0,0,1,624,0
-VP0165,U024,L011,Computer Science,web-development,databases,1916,False,,2025-12-11 21:20:03,2.0,4,10,0,3,2144,0
-VP0166,U011,L034,Physics,classical-mechanics,newtons-laws,121,False,,2026-03-01 00:33:53,1.0,2,0,0,2,561,0
-VP0167,U010,L060,Math,probability-stats,hypothesis-testing,1519,True,,2026-04-19 02:40:48,1.0,8,3,3,2,1567,2
-VP0168,U035,L056,Physics,thermodynamics,entropy,357,False,,2026-02-10 15:29:58,1.5,0,0,1,0,853,0
-VP0169,U041,L002,Computer Science,web-development,javascript-intro,1579,True,4,2026-03-14 13:14:25,2.0,2,3,5,4,1722,1
-VP0170,U032,L050,Physics,electromagnetism,electric-fields,3220,True,5,2026-04-10 20:44:56,1.5,15,0,7,5,3437,1
-VP0171,U025,L069,Math,linear-algebra,vectors-intro,529,False,,2026-04-07 01:19:17,2.0,4,0,2,2,2029,0
-VP0172,U018,L003,Physics,classical-mechanics,newtons-laws,917,False,,2025-11-30 13:04:01,1.5,3,2,0,1,1047,0
-VP0173,U004,L044,Computer Science,algorithms-101,sorting-basics,626,False,,2026-01-21 14:28:28,2.0,1,1,1,2,718,0
-VP0174,U020,L070,Physics,electromagnetism,faradays-law,676,False,,2026-01-31 07:02:34,1.0,3,1,2,4,3154,0
-VP0175,U012,L061,Math,linear-algebra,dot-product,347,True,5,2026-01-15 13:26:39,2.0,0,2,0,4,351,1
-VP0176,U044,L028,Physics,electromagnetism,coulombs-law,1125,False,,2025-11-22 22:17:05,1.5,5,6,3,5,2877,0
-VP0177,U016,L061,Computer Science,data-structures,trees-intro,323,False,,2026-03-14 16:12:25,1.5,1,1,2,1,361,0
-VP0178,U039,L046,Math,linear-algebra,vectors-intro,1143,False,,2026-03-06 03:56:12,2.0,0,9,1,1,1318,0
-VP0179,U010,L025,Computer Science,web-development,html-basics,732,False,,2025-11-05 03:30:41,2.0,2,0,2,0,815,0
-VP0180,U045,L024,Physics,electromagnetism,capacitors,733,False,,2026-02-14 13:27:19,1.5,2,2,1,1,851,0
-VP0181,U023,L059,Physics,thermodynamics,entropy,567,False,,2025-11-01 03:21:16,1.0,2,1,2,1,1427,0
-VP0182,U050,L069,Computer Science,web-development,api-design,2818,False,,2026-04-09 01:02:54,1.0,20,16,2,3,3305,0
-VP0183,U025,L009,Math,probability-stats,bayes-theorem,157,False,,2025-11-09 12:01:00,2.0,0,1,2,4,2337,0
-VP0184,U009,L076,Math,calculus-101,derivatives-basics,50,False,,2025-12-20 16:45:36,1.0,0,0,0,2,738,0
-VP0185,U004,L054,Physics,classical-mechanics,momentum,3230,True,5,2026-04-09 14:55:16,2.0,5,0,2,1,3240,2
-VP0186,U024,L032,Computer Science,algorithms-101,dynamic-programming,1366,True,5,2026-02-19 16:31:17,1.0,6,12,0,1,1388,4
-VP0187,U041,L014,Math,probability-stats,bayes-theorem,2252,False,,2025-12-03 09:23:15,1.5,7,0,7,2,2586,0
-VP0188,U012,L042,Computer Science,data-structures,graphs,1565,True,5,2026-02-27 03:24:42,2.0,0,6,1,4,1682,3
-VP0189,U016,L037,Computer Science,web-development,css-layouts,762,False,,2026-02-24 16:27:21,1.5,5,1,0,3,1836,0
-VP0190,U002,L071,Computer Science,algorithms-101,binary-search,291,False,,2026-02-08 06:41:52,1.5,0,2,2,0,326,0
-VP0191,U036,L010,Computer Science,web-development,css-layouts,628,True,3,2026-03-21 12:07:46,1.0,2,4,2,3,686,4
-VP0192,U021,L008,Physics,classical-mechanics,energy-work,195,False,,2026-04-29 00:13:57,1.5,0,1,0,3,3124,0
-VP0193,U050,L049,Physics,electromagnetism,faradays-law,246,False,,2025-11-11 12:15:16,1.5,2,2,0,1,2006,0
-VP0194,U020,L051,Computer Science,algorithms-101,binary-search,2301,True,4,2025-11-29 17:47:16,1.5,7,6,6,2,2511,1
-VP0195,U009,L018,Physics,classical-mechanics,energy-work,561,False,,2026-02-02 09:15:40,1.5,3,1,2,3,2640,0
-VP0196,U036,L042,Math,linear-algebra,dot-product,1149,False,,2026-03-13 23:06:36,2.0,1,0,5,4,2971,0
-VP0197,U037,L030,Math,calculus-101,taylors-series,1872,True,4,2025-12-09 18:36:01,1.0,9,11,1,1,1994,2
-VP0198,U044,L044,Physics,classical-mechanics,rotational-motion,559,False,,2026-03-15 17:19:12,1.0,3,1,2,1,651,0
-VP0199,U008,L049,Physics,electromagnetism,faradays-law,381,True,5,2026-02-22 04:59:59,1.5,2,2,0,2,393,1
-VP0200,U043,L047,Computer Science,algorithms-101,binary-search,898,True,5,2026-04-17 19:50:50,1.5,4,2,1,1,997,2
-VP0201,U007,L003,Math,linear-algebra,determinants,1794,True,4,2025-11-08 17:15:34,1.5,7,0,1,2,1883,1
-VP0202,U016,L065,Computer Science,data-structures,trees-intro,2040,False,,2025-12-24 13:41:09,1.0,12,1,1,6,2306,0
-VP0203,U004,L067,Computer Science,data-structures,hash-tables,143,False,,2026-03-12 15:41:06,1.5,0,1,1,2,420,0
-VP0204,U040,L018,Computer Science,web-development,css-layouts,1785,False,,2026-02-21 19:47:57,1.0,12,9,3,2,2009,0
-VP0205,U035,L073,Computer Science,algorithms-101,sorting-basics,536,False,,2026-04-28 02:03:08,2.0,0,2,2,1,1565,0
-VP0206,U011,L053,Physics,classical-mechanics,momentum,121,False,,2026-01-19 20:34:19,1.0,1,0,1,3,2483,0
-VP0207,U020,L004,Physics,thermodynamics,carnot-cycle,3223,True,4,2026-01-09 18:16:45,1.0,15,8,10,3,3324,2
-VP0208,U006,L035,Computer Science,data-structures,linked-lists,2243,True,5,2026-01-20 04:55:28,1.5,8,16,0,1,2357,1
-VP0209,U015,L078,Computer Science,web-development,css-layouts,3073,True,4,2026-03-23 18:53:40,2.0,13,3,3,4,3403,1
-VP0210,U025,L058,Computer Science,data-structures,hash-tables,585,False,,2026-01-28 17:18:37,1.5,0,0,3,2,2804,0
-VP0211,U003,L051,Math,probability-stats,regression,80,False,,2026-04-21 17:35:29,1.5,0,0,1,2,1920,0
-VP0212,U020,L065,Physics,electromagnetism,coulombs-law,1752,False,,2025-11-22 23:25:04,2.0,4,1,4,2,2030,0
-VP0213,U012,L021,Computer Science,web-development,databases,807,True,5,2026-03-20 11:52:07,1.5,3,4,1,0,854,3
-VP0214,U047,L043,Math,calculus-101,limits-intro,2898,True,3,2026-02-18 19:22:54,1.0,20,0,7,2,3192,2
-VP0215,U043,L016,Math,calculus-101,derivatives-basics,890,False,,2026-04-24 11:30:31,1.5,3,5,0,2,1032,0
-VP0216,U009,L077,Math,calculus-101,definite-integrals,3388,True,3,2026-02-25 12:40:42,1.5,9,5,11,3,3435,4
-VP0217,U001,L039,Math,probability-stats,distributions,2831,True,5,2026-01-04 07:05:22,2.0,8,8,6,2,2838,0
-VP0218,U006,L039,Math,calculus-101,integration-by-parts,947,True,3,2026-01-02 16:27:31,2.0,2,2,0,0,1030,3
-VP0219,U024,L068,Physics,classical-mechanics,energy-work,2411,True,5,2025-11-18 00:34:14,1.0,12,6,0,1,2554,1
-VP0220,U031,L017,Computer Science,web-development,databases,588,False,,2026-02-28 06:47:55,1.5,3,1,0,3,3528,0
+VP0001,U001,L043,Math,probability-stats,regression,2734,True,,2026-02-17 18:29:31,1.5,11,2,5,4,2911,0
+VP0002,U050,L014,Computer Science,web-development,api-design,3115,True,4,2025-11-09 21:20:29,1.0,25,16,4,2,3235,1
+VP0003,U011,L025,Physics,classical-mechanics,rotational-motion,219,False,,2026-03-20 04:28:25,1.0,2,1,1,3,3341,0
+VP0004,U022,L064,Math,linear-algebra,vectors-intro,1205,False,,2025-11-01 20:12:53,1.0,8,2,0,2,2893,0
+VP0005,U034,L042,Computer Science,algorithms-101,dynamic-programming,2008,True,5,2026-02-06 21:19:24,2.0,3,0,0,1,2072,1
+VP0006,U025,L039,Physics,thermodynamics,carnot-cycle,3315,True,,2026-04-13 17:00:41,2.0,9,2,14,5,3422,0
+VP0007,U045,L017,Computer Science,data-structures,heaps,1295,False,,2026-03-18 22:41:14,1.0,8,7,2,1,3318,0
+VP0008,U042,L002,Math,probability-stats,regression,3034,True,5,2026-02-10 12:05:53,1.0,12,13,5,2,3143,5
+VP0009,U007,L008,Math,linear-algebra,matrix-operations,464,False,,2026-03-15 02:24:18,1.0,4,0,0,0,517,0
+VP0010,U019,L050,Math,probability-stats,basic-probability,104,False,,2025-12-17 03:16:30,2.0,0,0,0,3,1769,0
+VP0011,U033,L057,Computer Science,data-structures,heaps,2762,True,5,2026-04-11 04:00:12,1.0,22,1,8,4,3021,2
+VP0012,U015,L066,Computer Science,web-development,authentication,2810,True,2,2025-11-24 04:13:44,1.5,11,0,4,3,2952,1
+VP0013,U025,L020,Math,linear-algebra,eigenvalues,2274,False,,2026-04-30 07:43:16,1.5,9,6,9,3,2579,0
+VP0014,U021,L029,Computer Science,algorithms-101,greedy-algorithms,616,False,,2025-12-06 16:53:31,1.5,2,1,1,2,2821,0
+VP0015,U034,L002,Math,probability-stats,conditional-probability,1908,True,,2025-11-23 06:38:34,1.0,9,11,0,2,2003,4
+VP0016,U043,L067,Physics,electromagnetism,coulombs-law,2808,True,4,2026-04-09 15:18:21,1.0,21,11,3,4,2930,2
+VP0017,U050,L009,Physics,thermodynamics,ideal-gas,1957,True,1,2025-12-11 22:18:46,1.5,12,11,2,1,2125,0
+VP0018,U043,L010,Computer Science,algorithms-101,greedy-algorithms,421,False,,2026-03-26 00:45:48,1.5,1,0,1,1,2037,0
+VP0019,U044,L034,Math,calculus-101,integration-by-parts,2794,False,,2026-01-19 03:42:23,1.0,18,10,4,4,3236,0
+VP0020,U025,L046,Physics,thermodynamics,entropy,1961,True,,2026-04-30 05:00:57,1.5,6,1,6,2,2073,3
+VP0021,U033,L069,Math,linear-algebra,determinants,1375,False,,2025-12-13 16:38:54,2.0,3,3,1,1,1534,0
+VP0022,U009,L002,Computer Science,data-structures,graphs,147,False,,2026-02-16 11:36:34,1.5,3,0,1,1,1508,0
+VP0023,U036,L045,Math,calculus-101,limits-intro,100,False,,2025-12-12 02:45:56,1.5,1,0,0,0,320,0
+VP0024,U027,L060,Computer Science,web-development,css-layouts,879,True,,2026-03-06 04:24:03,1.0,7,5,3,0,959,0
+VP0025,U036,L013,Math,linear-algebra,determinants,513,False,,2025-12-26 08:50:07,2.0,0,1,3,3,575,0
+VP0026,U040,L029,Math,calculus-101,chain-rule,2261,True,4,2026-03-19 07:05:18,2.0,8,3,0,2,2290,0
+VP0027,U048,L018,Computer Science,data-structures,trees-intro,1675,True,,2026-04-23 01:44:42,2.0,4,4,4,3,1772,1
+VP0028,U035,L076,Math,linear-algebra,determinants,2474,False,,2025-12-12 07:32:11,2.0,10,0,3,2,2866,0
+VP0029,U003,L060,Computer Science,data-structures,graphs,2209,False,,2026-02-06 07:24:11,1.5,7,14,3,1,2510,0
+VP0030,U033,L019,Math,linear-algebra,eigenvalues,2124,True,4,2026-03-23 21:38:05,2.0,8,0,3,4,2356,1
+VP0031,U047,L047,Physics,electromagnetism,electric-fields,237,False,,2026-01-15 08:38:41,1.0,1,1,1,4,1196,0
+VP0032,U031,L010,Physics,classical-mechanics,newtons-laws,2872,True,4,2026-02-09 07:49:25,2.0,4,3,7,2,2956,4
+VP0033,U017,L020,Physics,classical-mechanics,momentum,1843,True,4,2025-12-07 07:02:36,1.5,7,6,3,2,1962,1
+VP0034,U011,L021,Physics,thermodynamics,carnot-cycle,212,False,,2026-03-06 16:26:47,1.5,1,0,0,2,784,0
+VP0035,U027,L024,Math,calculus-101,limits-intro,719,False,,2026-02-09 07:43:12,1.0,2,1,2,2,823,0
+VP0036,U026,L029,Computer Science,web-development,authentication,72,False,,2026-04-11 05:46:29,2.0,1,0,0,2,376,0
+VP0037,U027,L065,Computer Science,algorithms-101,dynamic-programming,3196,True,3,2026-03-13 21:23:06,1.0,20,0,8,3,3443,1
+VP0038,U027,L056,Math,probability-stats,basic-probability,1025,True,,2026-02-10 08:54:08,1.0,7,0,3,3,1026,1
+VP0039,U027,L030,Physics,classical-mechanics,rotational-motion,2345,True,4,2026-04-26 17:18:18,2.0,6,9,2,1,2470,1
+VP0040,U006,L027,Physics,thermodynamics,ideal-gas,1679,False,,2026-03-14 13:13:31,1.5,8,3,0,1,1973,0
+VP0041,U021,L062,Physics,electromagnetism,electric-fields,857,True,5,2025-12-05 16:53:37,1.0,4,1,0,0,933,1
+VP0042,U024,L030,Computer Science,web-development,api-design,591,False,,2026-01-26 17:16:58,1.5,1,1,1,0,1339,0
+VP0043,U045,L061,Math,calculus-101,derivatives-basics,2197,True,,2026-04-29 18:49:43,2.0,4,1,6,3,2382,1
+VP0044,U039,L037,Physics,classical-mechanics,newtons-laws,1190,False,,2026-03-19 04:19:24,2.0,1,0,0,2,1377,0
+VP0045,U039,L066,Math,calculus-101,taylors-series,2078,False,,2026-02-09 03:51:56,2.0,5,5,3,3,2324,0
+VP0046,U045,L051,Math,probability-stats,conditional-probability,2723,False,,2026-01-18 17:32:18,2.0,7,6,6,4,3060,0
+VP0047,U038,L036,Math,probability-stats,basic-probability,184,False,,2025-12-14 22:36:48,1.5,1,0,0,2,3318,0
+VP0048,U039,L066,Math,linear-algebra,dot-product,2344,False,,2025-12-21 00:56:17,1.5,8,9,2,4,2654,0
+VP0049,U035,L076,Computer Science,data-structures,heaps,576,False,,2026-04-17 09:19:10,1.5,3,2,2,1,2113,0
+VP0050,U002,L002,Physics,classical-mechanics,kinematics-2d,517,False,,2026-03-17 02:03:04,1.5,2,2,2,1,576,0
+VP0051,U017,L031,Math,linear-algebra,vectors-intro,1818,True,3,2026-04-19 11:16:29,1.0,13,3,2,4,1934,1
+VP0052,U017,L079,Math,calculus-101,derivatives-basics,364,False,,2025-11-02 06:52:06,1.0,5,2,0,0,1322,0
+VP0053,U049,L074,Computer Science,algorithms-101,recursion,1799,True,4,2025-11-25 21:40:10,2.0,5,2,3,2,1820,3
+VP0054,U004,L049,Computer Science,data-structures,hash-tables,2313,True,5,2026-02-21 19:41:40,1.5,9,6,3,1,2514,3
+VP0055,U007,L027,Physics,electromagnetism,circuits,1225,False,,2026-01-21 09:06:52,1.5,3,4,1,2,1363,0
+VP0056,U045,L026,Physics,electromagnetism,faradays-law,1374,True,,2025-11-29 07:40:51,1.0,7,2,4,2,1445,2
+VP0057,U048,L039,Math,linear-algebra,vectors-intro,903,False,,2025-12-19 17:37:25,2.0,4,0,2,0,1023,0
+VP0058,U036,L034,Computer Science,algorithms-101,recursion,30,False,,2026-01-10 02:12:17,1.5,0,0,2,3,705,0
+VP0059,U024,L069,Computer Science,web-development,javascript-intro,1514,False,,2025-12-04 21:24:35,1.5,4,3,0,0,1709,0
+VP0060,U050,L054,Physics,electromagnetism,magnetic-fields,2994,True,5,2026-03-03 13:56:50,1.5,18,7,2,3,3057,1
+VP0061,U040,L057,Computer Science,data-structures,arrays-lists,559,False,,2026-04-01 15:36:10,1.0,3,0,0,1,624,0
+VP0062,U024,L011,Computer Science,web-development,databases,1916,False,,2025-12-11 21:20:03,2.0,4,10,0,3,2144,0
+VP0063,U011,L034,Physics,classical-mechanics,newtons-laws,121,False,,2026-03-01 00:33:53,1.0,2,0,0,2,561,0
+VP0064,U010,L060,Math,probability-stats,hypothesis-testing,1519,True,,2026-04-19 02:40:48,1.0,8,3,3,2,1567,2
+VP0065,U035,L056,Physics,thermodynamics,entropy,357,False,,2026-02-10 15:29:58,1.5,0,0,1,0,853,0
+VP0066,U041,L002,Computer Science,web-development,javascript-intro,1579,True,4,2026-03-14 13:14:25,2.0,2,3,5,4,1722,1
+VP0067,U032,L050,Physics,electromagnetism,electric-fields,3220,True,5,2026-04-10 20:44:56,1.5,15,0,7,5,3437,1
+VP0068,U025,L069,Math,linear-algebra,vectors-intro,529,False,,2026-04-07 01:19:17,2.0,4,0,2,2,2029,0
+VP0069,U018,L003,Physics,classical-mechanics,newtons-laws,917,False,,2025-11-30 13:04:01,1.5,3,2,0,1,1047,0
+VP0070,U004,L044,Computer Science,algorithms-101,sorting-basics,626,False,,2026-01-21 14:28:28,2.0,1,1,1,2,718,0
+VP0071,U020,L070,Physics,electromagnetism,faradays-law,676,False,,2026-01-31 07:02:34,1.0,3,1,2,4,3154,0
+VP0072,U012,L061,Math,linear-algebra,dot-product,347,True,5,2026-01-15 13:26:39,2.0,0,2,0,4,351,1
+VP0073,U044,L028,Physics,electromagnetism,coulombs-law,1125,False,,2025-11-22 22:17:05,1.5,5,6,3,5,2877,0
+VP0074,U016,L061,Computer Science,data-structures,trees-intro,323,False,,2026-03-14 16:12:25,1.5,1,1,2,1,361,0
+VP0075,U039,L046,Math,linear-algebra,vectors-intro,1143,False,,2026-03-06 03:56:12,2.0,0,9,1,1,1318,0
+VP0076,U010,L025,Computer Science,web-development,html-basics,732,False,,2025-11-05 03:30:41,2.0,2,0,2,0,815,0
+VP0077,U045,L024,Physics,electromagnetism,capacitors,733,False,,2026-02-14 13:27:19,1.5,2,2,1,1,851,0
+VP0078,U023,L059,Physics,thermodynamics,entropy,567,False,,2025-11-01 03:21:16,1.0,2,1,2,1,1427,0
+VP0079,U050,L069,Computer Science,web-development,api-design,2818,False,,2026-04-09 01:02:54,1.0,20,16,2,3,3305,0
+VP0080,U025,L009,Math,probability-stats,bayes-theorem,157,False,,2025-11-09 12:01:00,2.0,0,1,2,4,2337,0
+VP0081,U009,L076,Math,calculus-101,derivatives-basics,50,False,,2025-12-20 16:45:36,1.0,0,0,0,2,738,0
+VP0082,U004,L054,Physics,classical-mechanics,momentum,3230,True,5,2026-04-09 14:55:16,2.0,5,0,2,1,3240,2
+VP0083,U024,L032,Computer Science,algorithms-101,dynamic-programming,1366,True,5,2026-02-19 16:31:17,1.0,6,12,0,1,1388,4
+VP0084,U041,L014,Math,probability-stats,bayes-theorem,2252,False,,2025-12-03 09:23:15,1.5,7,0,7,2,2586,0
+VP0085,U012,L042,Computer Science,data-structures,graphs,1565,True,5,2026-02-27 03:24:42,2.0,0,6,1,4,1682,3
+VP0086,U016,L037,Computer Science,web-development,css-layouts,762,False,,2026-02-24 16:27:21,1.5,5,1,0,3,1836,0
+VP0087,U002,L071,Computer Science,algorithms-101,binary-search,291,False,,2026-02-08 06:41:52,1.5,0,2,2,0,326,0
+VP0088,U036,L010,Computer Science,web-development,css-layouts,628,True,3,2026-03-21 12:07:46,1.0,2,4,2,3,686,4
+VP0089,U021,L008,Physics,classical-mechanics,energy-work,195,False,,2026-04-29 00:13:57,1.5,0,1,0,3,3124,0
+VP0090,U050,L049,Physics,electromagnetism,faradays-law,246,False,,2025-11-11 12:15:16,1.5,2,2,0,1,2006,0
+VP0091,U020,L051,Computer Science,algorithms-101,binary-search,2301,True,4,2025-11-29 17:47:16,1.5,7,6,6,2,2511,1
+VP0092,U009,L018,Physics,classical-mechanics,energy-work,561,False,,2026-02-02 09:15:40,1.5,3,1,2,3,2640,0
+VP0093,U036,L042,Math,linear-algebra,dot-product,1149,False,,2026-03-13 23:06:36,2.0,1,0,5,4,2971,0
+VP0094,U037,L030,Math,calculus-101,taylors-series,1872,True,4,2025-12-09 18:36:01,1.0,9,11,1,1,1994,2
+VP0095,U044,L044,Physics,classical-mechanics,rotational-motion,559,False,,2026-03-15 17:19:12,1.0,3,1,2,1,651,0
+VP0096,U008,L049,Physics,electromagnetism,faradays-law,381,True,5,2026-02-22 04:59:59,1.5,2,2,0,2,393,1
+VP0097,U043,L047,Computer Science,algorithms-101,binary-search,898,True,5,2026-04-17 19:50:50,1.5,4,2,1,1,997,2
+VP0098,U007,L003,Math,linear-algebra,determinants,1794,True,4,2025-11-08 17:15:34,1.5,7,0,1,2,1883,1
+VP0099,U016,L065,Computer Science,data-structures,trees-intro,2040,False,,2025-12-24 13:41:09,1.0,12,1,1,6,2306,0
+VP0100,U004,L067,Computer Science,data-structures,hash-tables,143,False,,2026-03-12 15:41:06,1.5,0,1,1,2,420,0
+VP0101,U040,L018,Computer Science,web-development,css-layouts,1785,False,,2026-02-21 19:47:57,1.0,12,9,3,2,2009,0
+VP0102,U035,L073,Computer Science,algorithms-101,sorting-basics,536,False,,2026-04-28 02:03:08,2.0,0,2,2,1,1565,0
+VP0103,U011,L053,Physics,classical-mechanics,momentum,121,False,,2026-01-19 20:34:19,1.0,1,0,1,3,2483,0
+VP0104,U020,L004,Physics,thermodynamics,carnot-cycle,3223,True,4,2026-01-09 18:16:45,1.0,15,8,10,3,3324,2
+VP0105,U006,L035,Computer Science,data-structures,linked-lists,2243,True,5,2026-01-20 04:55:28,1.5,8,16,0,1,2357,1
+VP0106,U015,L078,Computer Science,web-development,css-layouts,3073,True,4,2026-03-23 18:53:40,2.0,13,3,3,4,3403,1
+VP0107,U025,L058,Computer Science,data-structures,hash-tables,585,False,,2026-01-28 17:18:37,1.5,0,0,3,2,2804,0
+VP0108,U003,L051,Math,probability-stats,regression,80,False,,2026-04-21 17:35:29,1.5,0,0,1,2,1920,0
+VP0109,U020,L065,Physics,electromagnetism,coulombs-law,1752,False,,2025-11-22 23:25:04,2.0,4,1,4,2,2030,0
+VP0110,U012,L021,Computer Science,web-development,databases,807,True,5,2026-03-20 11:52:07,1.5,3,4,1,0,854,3
+VP0111,U047,L043,Math,calculus-101,limits-intro,2898,True,3,2026-02-18 19:22:54,1.0,20,0,7,2,3192,2
+VP0112,U043,L016,Math,calculus-101,derivatives-basics,890,False,,2026-04-24 11:30:31,1.5,3,5,0,2,1032,0
+VP0113,U009,L077,Math,calculus-101,definite-integrals,3388,True,3,2026-02-25 12:40:42,1.5,9,5,11,3,3435,4
+VP0114,U001,L039,Math,probability-stats,distributions,2831,True,5,2026-01-04 07:05:22,2.0,8,8,6,2,2838,0
+VP0115,U006,L039,Math,calculus-101,integration-by-parts,947,True,3,2026-01-02 16:27:31,2.0,2,2,0,0,1030,3
+VP0116,U024,L068,Physics,classical-mechanics,energy-work,2411,True,5,2025-11-18 00:34:14,1.0,12,6,0,1,2554,1
+VP0117,U031,L017,Computer Science,web-development,databases,588,False,,2026-02-28 06:47:55,1.5,3,1,0,3,3528,0
+VP0118,U037,L027,Physics,thermodynamics,carnot-cycle,2867,True,,2026-04-05 06:14:23,1.0,14,5,2,2,2888,3
+VP0119,U040,L015,Physics,electromagnetism,electric-fields,1622,True,,2026-03-14 04:13:35,1.0,12,4,3,4,1667,2
+VP0120,U022,L061,Physics,electromagnetism,capacitors,2249,False,,2026-04-04 19:28:29,2.0,7,15,4,2,2630,0
+VP0121,U003,L074,Computer Science,algorithms-101,recursion,932,True,2,2026-03-14 02:37:49,2.0,0,4,2,1,936,3
+VP0122,U022,L077,Physics,classical-mechanics,kinematics-1d,347,False,,2025-11-23 16:32:07,2.0,0,0,0,1,1448,0
+VP0123,U049,L026,Physics,thermodynamics,second-law,2936,True,5,2026-04-27 08:32:14,1.0,17,5,5,2,3207,1
+VP0124,U006,L067,Physics,thermodynamics,heat-transfer,3548,True,,2026-03-12 09:43:52,1.0,21,22,1,1,3572,1
+VP0125,U009,L040,Math,probability-stats,basic-probability,2120,True,4,2025-11-05 08:45:56,1.0,11,4,8,1,2181,1
+VP0126,U037,L036,Physics,thermodynamics,first-law,1444,False,,2025-11-23 05:25:26,1.0,7,8,1,2,1614,0
+VP0127,U001,L057,Computer Science,web-development,databases,655,True,4,2025-11-10 20:24:04,1.5,2,5,2,0,719,2
+VP0128,U009,L058,Math,linear-algebra,determinants,436,False,,2026-02-28 16:14:15,1.0,0,1,3,1,506,0
+VP0129,U023,L060,Physics,electromagnetism,coulombs-law,1092,False,,2025-11-19 21:16:42,1.0,9,0,3,3,3220,0
+VP0130,U030,L051,Physics,thermodynamics,carnot-cycle,963,False,,2025-12-06 14:29:14,1.0,6,7,0,1,3209,0
+VP0131,U045,L078,Computer Science,data-structures,trees-intro,1865,False,,2026-02-20 14:11:41,1.5,7,8,5,4,2156,0
+VP0132,U009,L031,Computer Science,algorithms-101,recursion,667,False,,2026-03-01 13:29:11,1.5,3,1,1,4,3225,0
+VP0133,U016,L074,Computer Science,algorithms-101,recursion,1697,True,5,2026-04-12 11:31:45,2.0,3,1,0,3,1872,1
+VP0134,U032,L077,Math,probability-stats,regression,1915,False,,2026-03-30 18:43:14,2.0,7,13,4,2,2196,0
+VP0135,U025,L019,Physics,electromagnetism,capacitors,2664,False,,2026-03-09 07:55:49,2.0,9,0,10,4,3004,0
+VP0136,U010,L045,Physics,thermodynamics,second-law,1840,True,,2025-11-18 08:06:34,1.0,9,2,2,1,1897,2
+VP0137,U038,L046,Math,probability-stats,regression,602,False,,2025-11-22 07:13:52,1.0,7,0,2,2,1955,0
+VP0138,U019,L047,Math,calculus-101,integration-by-parts,3019,True,5,2026-04-13 02:30:35,1.5,9,12,4,2,3176,2
+VP0139,U027,L018,Math,linear-algebra,determinants,700,False,,2025-11-17 10:33:36,1.5,5,4,0,0,814,0
+VP0140,U009,L029,Computer Science,data-structures,hash-tables,871,False,,2025-12-07 01:50:56,2.0,0,2,3,3,3531,0
+VP0141,U028,L005,Computer Science,algorithms-101,dynamic-programming,484,False,,2026-02-19 07:46:08,2.0,1,3,1,2,2340,0
+VP0142,U031,L032,Computer Science,data-structures,arrays-lists,2627,True,4,2026-01-31 17:47:02,1.0,13,0,7,1,2676,1
+VP0143,U041,L061,Computer Science,web-development,authentication,138,False,,2026-01-28 03:57:19,2.0,0,0,0,4,619,0
+VP0144,U033,L022,Physics,thermodynamics,carnot-cycle,1653,True,4,2026-02-20 05:43:15,2.0,5,5,4,1,1657,2
+VP0145,U004,L023,Computer Science,data-structures,heaps,2676,True,3,2026-04-26 17:31:12,1.0,12,10,1,2,2857,2
+VP0146,U038,L044,Computer Science,algorithms-101,greedy-algorithms,1898,False,,2025-11-17 09:20:21,1.5,8,1,2,0,2129,0
+VP0147,U010,L045,Computer Science,algorithms-101,recursion,1577,False,,2025-11-11 13:10:35,1.0,7,0,4,4,3383,0
+VP0148,U042,L056,Physics,classical-mechanics,newtons-laws,959,True,4,2025-11-03 07:17:08,1.5,2,0,1,1,986,4
+VP0149,U019,L079,Physics,electromagnetism,capacitors,699,False,,2026-04-28 06:23:09,2.0,3,3,0,3,1593,0
+VP0150,U042,L076,Physics,electromagnetism,magnetic-fields,261,False,,2026-03-30 14:46:39,2.0,0,1,0,0,1393,0
+VP0151,U013,L014,Computer Science,data-structures,heaps,641,False,,2026-03-14 02:39:34,1.5,0,0,3,4,3127,0
+VP0152,U029,L077,Physics,classical-mechanics,rotational-motion,1249,False,,2026-03-04 21:40:54,1.0,9,5,3,1,1460,0
+VP0153,U008,L059,Computer Science,algorithms-101,big-o-notation,2695,True,5,2026-04-29 04:04:19,1.5,11,1,4,3,2776,2
+VP0154,U018,L008,Physics,thermodynamics,carnot-cycle,1054,False,,2025-12-21 03:28:44,1.0,8,5,0,3,3453,0
+VP0155,U017,L028,Math,linear-algebra,vectors-intro,410,False,,2026-02-28 05:17:25,1.5,3,2,2,3,2314,0
+VP0156,U042,L001,Math,linear-algebra,determinants,1174,False,,2026-05-01 03:35:59,1.0,5,0,3,2,1360,0
+VP0157,U003,L009,Computer Science,data-structures,trees-intro,882,True,,2026-02-13 21:10:56,1.5,0,2,0,1,920,0
+VP0158,U015,L038,Math,linear-algebra,determinants,3336,True,3,2026-03-06 18:55:55,1.0,21,7,12,4,3494,2
+VP0159,U013,L057,Math,probability-stats,basic-probability,306,False,,2026-03-23 18:51:32,2.0,2,0,1,3,1873,0
+VP0160,U013,L058,Math,calculus-101,derivatives-basics,61,False,,2025-11-04 04:30:53,1.5,2,0,0,3,403,0
+VP0161,U003,L010,Physics,classical-mechanics,kinematics-2d,3412,True,5,2025-11-08 03:51:44,1.0,17,1,3,3,3526,0
+VP0162,U048,L076,Math,linear-algebra,determinants,360,True,3,2025-11-13 10:03:50,1.0,2,0,1,2,378,1
+VP0163,U007,L042,Math,linear-algebra,linear-transformations,3101,False,,2025-11-24 10:58:48,2.0,6,14,6,3,3573,0
+VP0164,U044,L054,Computer Science,web-development,css-layouts,218,False,,2025-12-03 15:10:25,1.5,0,0,1,2,1617,0
+VP0165,U045,L012,Physics,thermodynamics,first-law,2078,True,1,2026-03-18 05:39:10,1.0,14,10,3,1,2096,2
+VP0166,U042,L031,Computer Science,data-structures,hash-tables,1582,False,,2025-12-04 21:27:25,1.5,5,5,3,4,3140,0
+VP0167,U040,L016,Computer Science,algorithms-101,dynamic-programming,90,False,,2026-02-11 22:54:23,1.0,1,0,1,2,1037,0
+VP0168,U007,L006,Computer Science,data-structures,graphs,2341,True,3,2025-11-11 11:47:12,1.5,10,10,4,1,2378,0
+VP0169,U042,L057,Physics,electromagnetism,coulombs-law,2000,True,4,2026-02-24 02:12:47,1.0,8,0,5,4,2080,1
+VP0170,U038,L026,Physics,electromagnetism,coulombs-law,667,False,,2026-01-12 22:06:27,1.0,5,2,1,4,3360,0
+VP0171,U015,L026,Math,linear-algebra,linear-transformations,2164,True,5,2026-01-05 05:22:01,1.0,16,1,7,3,2284,0
+VP0172,U009,L078,Math,probability-stats,regression,476,False,,2025-12-01 10:41:08,2.0,0,1,0,4,544,0
+VP0173,U041,L060,Computer Science,algorithms-101,dynamic-programming,88,False,,2025-12-25 05:01:50,1.5,0,0,1,4,2564,0
+VP0174,U001,L065,Computer Science,data-structures,heaps,1224,True,4,2025-11-07 12:40:59,1.5,7,1,3,3,1310,1
+VP0175,U028,L028,Computer Science,data-structures,hash-tables,3132,False,,2025-11-26 18:28:57,1.5,13,16,8,3,3568,0
+VP0176,U023,L052,Physics,classical-mechanics,rotational-motion,655,True,,2025-12-06 21:54:34,1.0,3,0,2,2,671,1
+VP0177,U024,L011,Computer Science,data-structures,heaps,2780,True,,2026-03-01 11:31:51,1.0,15,8,1,2,2894,2
+VP0178,U022,L072,Computer Science,algorithms-101,dynamic-programming,2629,False,,2026-03-17 20:56:57,1.0,14,14,3,3,3063,0
+VP0179,U005,L027,Computer Science,web-development,css-layouts,122,False,,2026-03-27 06:02:34,1.5,0,0,0,0,866,0
+VP0180,U048,L009,Math,linear-algebra,eigenvalues,1293,True,4,2025-12-07 13:47:28,1.0,10,4,2,2,1395,2
+VP0181,U030,L067,Math,calculus-101,integration-by-parts,896,False,,2026-03-02 19:19:08,1.0,5,5,0,1,1032,0
+VP0182,U002,L030,Physics,electromagnetism,capacitors,970,False,,2026-04-12 03:08:14,1.0,3,4,1,3,2517,0
+VP0183,U034,L040,Computer Science,data-structures,hash-tables,2599,True,,2025-12-04 08:21:10,2.0,1,11,0,1,2670,2
+VP0184,U017,L069,Math,linear-algebra,eigenvalues,48,False,,2025-12-26 09:20:43,1.0,0,0,0,1,1480,0
+VP0185,U012,L024,Math,probability-stats,bayes-theorem,330,False,,2025-12-10 20:05:35,1.5,2,1,1,3,3029,0
+VP0186,U036,L052,Computer Science,algorithms-101,greedy-algorithms,151,False,,2026-04-30 19:05:44,1.5,0,0,0,5,1598,0
+VP0187,U032,L074,Math,linear-algebra,eigenvalues,937,True,,2026-03-10 11:55:19,2.0,2,5,1,2,939,0
+VP0188,U010,L080,Computer Science,web-development,api-design,749,False,,2026-04-13 06:46:13,1.5,5,2,2,2,1687,0
+VP0189,U015,L066,Physics,electromagnetism,electric-fields,1554,True,5,2026-01-16 14:08:50,1.0,7,1,5,2,1636,2
+VP0190,U013,L048,Physics,electromagnetism,circuits,2389,False,,2025-11-03 08:48:47,2.0,2,5,9,3,2778,0
+VP0191,U019,L021,Physics,electromagnetism,magnetic-fields,179,False,,2026-04-06 10:42:26,1.5,2,0,0,3,2125,0
+VP0192,U047,L009,Physics,thermodynamics,entropy,306,False,,2026-05-01 04:48:29,1.0,3,1,3,0,871,0
+VP0193,U038,L039,Physics,classical-mechanics,newtons-laws,1819,True,4,2026-04-12 01:26:56,1.0,9,3,3,1,1977,2
+VP0194,U038,L016,Physics,electromagnetism,circuits,2843,False,,2026-03-07 22:59:21,1.5,13,11,4,2,3330,0
+VP0195,U043,L047,Physics,electromagnetism,coulombs-law,501,False,,2026-02-21 19:57:45,1.0,3,0,2,2,2314,0
+VP0196,U031,L018,Computer Science,data-structures,trees-intro,2796,True,5,2026-01-09 09:32:13,2.0,3,12,8,3,2872,2
+VP0197,U011,L024,Math,linear-algebra,eigenvalues,364,False,,2026-03-29 11:42:38,1.0,2,2,2,3,2018,0
+VP0198,U007,L069,Computer Science,algorithms-101,dynamic-programming,846,False,,2026-02-21 15:12:47,2.0,3,1,1,1,1621,0
+VP0199,U023,L072,Math,calculus-101,derivatives-basics,2306,True,,2026-02-28 02:47:00,1.0,14,3,7,4,2422,0
+VP0200,U045,L045,Computer Science,web-development,authentication,233,False,,2025-12-31 12:02:15,1.0,2,0,1,3,2557,0
+VP0201,U045,L017,Physics,classical-mechanics,energy-work,2509,True,3,2025-11-16 06:19:32,1.0,14,14,6,3,2747,3
+VP0202,U028,L061,Computer Science,algorithms-101,big-o-notation,193,False,,2025-11-24 02:13:03,1.5,1,1,0,0,377,0
+VP0203,U017,L045,Math,calculus-101,chain-rule,2627,False,,2025-11-06 16:21:26,1.5,14,5,5,2,3034,0
+VP0204,U006,L075,Math,probability-stats,distributions,2354,False,,2026-03-29 04:58:30,2.0,7,3,0,1,2674,0
+VP0205,U001,L065,Computer Science,algorithms-101,greedy-algorithms,175,False,,2026-04-15 07:19:50,2.0,0,0,1,2,1084,0
+VP0206,U046,L041,Physics,electromagnetism,capacitors,2650,True,,2025-11-25 00:05:22,2.0,6,11,5,3,2714,1
+VP0207,U030,L029,Math,probability-stats,conditional-probability,2127,True,5,2026-02-16 13:26:06,1.5,10,7,3,3,2330,2
+VP0208,U027,L051,Physics,electromagnetism,coulombs-law,243,False,,2026-01-25 01:29:59,2.0,1,1,0,0,585,0
+VP0209,U034,L052,Computer Science,web-development,html-basics,720,True,5,2025-11-24 20:06:47,2.0,3,3,0,0,788,2
+VP0210,U015,L052,Physics,thermodynamics,entropy,279,False,,2026-02-03 02:05:12,1.5,2,0,0,4,1440,0
+VP0211,U033,L049,Physics,classical-mechanics,energy-work,692,True,,2026-02-26 09:33:55,1.5,3,1,2,2,742,1
+VP0212,U044,L064,Physics,classical-mechanics,kinematics-2d,156,False,,2026-02-04 04:43:56,1.5,0,0,0,3,2847,0
+VP0213,U033,L057,Physics,thermodynamics,second-law,64,False,,2026-01-29 06:09:12,2.0,1,0,0,3,2514,0
+VP0214,U003,L015,Math,calculus-101,definite-integrals,620,False,,2026-02-19 11:03:26,2.0,2,3,0,3,3000,0
+VP0215,U044,L037,Physics,thermodynamics,ideal-gas,2880,True,4,2026-01-02 05:33:28,1.5,15,1,6,4,3107,0
+VP0216,U004,L055,Math,probability-stats,basic-probability,357,False,,2026-01-07 00:28:59,2.0,0,1,0,0,825,0
+VP0217,U023,L044,Physics,electromagnetism,electric-fields,2676,False,,2025-12-03 23:13:43,1.5,8,0,9,3,3008,0
+VP0218,U002,L074,Computer Science,data-structures,arrays-lists,2074,True,4,2025-11-19 23:26:04,1.5,9,4,3,1,2187,0
+VP0219,U032,L010,Math,probability-stats,bayes-theorem,1099,True,,2026-04-13 04:27:24,2.0,3,2,1,4,1143,3
+VP0220,U035,L068,Math,linear-algebra,eigenvalues,492,True,4,2026-02-01 06:54:40,1.5,3,3,2,3,494,2
